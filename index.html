@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- header span font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- header H1 font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>MoGo template</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="web-name">
+                    <a href="#">MoGo</a>
+                </div>
+                <div class="nav-links">
+                    <a href="#">About</a>
+                    <a href="#">Service</a>
+                    <a href="#">Work</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="#"><img src="assets/icons/shopping-cart.png" alt="shopping cart icon"></a>
+                    <a href="#"><img src="assets/icons/loupe.png" alt="loupe"></a>
+                </div>
+                <div id="mobile-menu" class="mobile-menu">
+                    <button onclick="showMobileMenu()"><img src="assets/icons/menu.png" alt=""></button>
+                    <div class="mobile-nav-links" id="mobile-nav-links">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#"><img src="assets/icons/shopping-cart.png" alt="shopping cart icon"> Cart</a></li>
+                            <li><a href="#"><img src="assets/icons/loupe.png" alt="loupe"> Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-content">
+                <span>Creative template</span>
+                <h1>Welcome to mogo</h1>
+                <div class="rectangle"></div>
+                <button>Learn more</button>
+            </div>
+            <div class="header-bottom-content">
+                <section>
+                    <p class="colorfull-border"><span>01</span> Intro</p>
+                </section>
+                <section>
+                    <p><span>02</span> Work</p>
+                </section>
+                <section>
+                    <p><span>03</span> About</p>
+                </section>
+                <section>
+                    <p><span>04</span> Contacts</p>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="story-about-us-block">
+                <section>
+                    <span>What we do</span>
+                    <h1>Story about us</h1>
+                    <div class="rectangle"></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nam veritatis culpa voluptatibus? Assumenda beatae voluptates, 
+                       amet atque suscipit possimus perferendis nostrum inventore earum quo ratione, dicta consequuntur!</p>
+                    <div class="images">
+                        <div class="first-image"></div>
+                        <div class="second-image"></div>
+                        <div class="third-image"></div>
+                    </div>   
+                </section>
+            </div>
+        </div>
+        <div class="statistics-block">
+            <section>
+                <div class="stats">
+                    <div class="number">42</div>
+                    <span>web design projects</span>
+                </div>
+                <div class="stats">
+                    <div class="number">123</div>
+                    <span>happy client</span>
+                </div>
+                <div class="stats">
+                    <div class="number">15</div>
+                    <span>award winner</span>
+                </div>
+                <div class="stats">
+                    <div class="number">99</div>
+                    <span>cup of coffee</span>
+                </div>
+                <div class="stats">
+                    <div class="number">24</div>
+                    <span>members</span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    function showMobileMenu() {
+        var menu = document.getElementById("mobile-nav-links");
+        var active = document.getElementById("mobile-menu")
+        if(menu.style.display === "none") {
+            menu.style.display = "block";
+            active.classList.add("active-button")
+        } else {
+            menu.style.display = "none";
+            active.classList.remove("active-button")
+        }
+    }
+</script>
+</html>
