@@ -150,6 +150,11 @@ header .header-content button {
   cursor: pointer;
 }
 
+header .header-content button:hover {
+  border: 2px solid #000000;
+  color: #000000;
+}
+
 header .header-bottom-content {
   text-align: center;
   display: block;
@@ -318,11 +323,8 @@ main .statistics-block section .stats {
   display: inline-block;
   color: #ffffff;
   border-left: 1px solid #ffffff;
-  padding: 28px;
-  border: 1px solid white;
+  padding: 88px 28px 88px 28px;
   width: 180px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 main .statistics-block section .stats .number {
@@ -334,6 +336,10 @@ main .statistics-block section .stats span {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   font-size: 0.6rem;
+}
+
+main .statistics-block section .stats:nth-child(5) {
+  border-right: 1px solid #ffffff;
 }
 
 .services-block {

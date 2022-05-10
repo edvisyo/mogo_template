@@ -141,6 +141,10 @@ header {
             padding: 7px;
             cursor: pointer;
         }
+        button:hover {
+            border: 2px solid #000000;
+            color: #000000;
+        }
     }
     .header-bottom-content {
         text-align: center;
@@ -278,11 +282,8 @@ main {
                 display: inline-block;
                 color: $whiteColor;
                 border-left: 1px solid $whiteColor;
-                padding: 28px;
-                border: 1px solid white;
+                padding: 88px 28px 88px 28px;
                 width: 180px;
-                margin-top: 20px;
-                margin-bottom: 20px;
                 .number {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 3rem;
@@ -292,6 +293,9 @@ main {
                     text-transform: uppercase;
                     font-size: 0.6rem;
                 }
+            }
+            .stats:nth-child(5) {
+                border-right: 1px solid $whiteColor;
             }
             
         }
