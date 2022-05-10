@@ -354,6 +354,10 @@ main .statistics-block section .stats:nth-child(5) {
   font-size: 1.5rem;
 }
 
+.services-block section h1 {
+  margin-top: 15px;
+}
+
 .services-block section .rectangle {
   border-top: 2px solid #c32f27;
   margin-top: 35px;
