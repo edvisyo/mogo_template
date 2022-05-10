@@ -60,6 +60,17 @@ span {
   line-height: 28px;
 }
 
+.overlay {
+  visibility: hidden;
+  margin-top: 90px;
+}
+
+.overlay p {
+  text-transform: uppercase;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
 header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/header-image/pexels-radovan-zierik-5138164.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/header-image/pexels-radovan-zierik-5138164.jpg");
@@ -94,7 +105,7 @@ header nav .nav-links {
   text-transform: uppercase;
 }
 
-header nav .nav-links a:nth-child(1) {
+header nav .nav-links a:hover {
   color: #ffbf48;
   padding-bottom: 5px;
   border-bottom: 2px solid #ffbf48;
@@ -222,37 +233,71 @@ main .story-about-us-block section .images {
   margin-top: 120px;
 }
 
-main .story-about-us-block section .images img {
-  width: 100%;
-  max-width: 347px;
-  height: 230px;
-}
-
 main .story-about-us-block section .images .first-image {
   display: inline-block;
+  background-image: url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
+  background-size: 100% 100%;
+  width: 330px;
+  height: 230px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+main .story-about-us-block section .images .first-image:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
-  background-size: 100% 100%;
-  width: 380px;
-  height: 230px;
+  -webkit-box-shadow: 7px 7px #7dcfb6;
+          box-shadow: 7px 7px #7dcfb6;
+}
+
+main .story-about-us-block section .images .first-image:hover .overlay {
+  visibility: visible;
 }
 
 main .story-about-us-block section .images .second-image {
   display: inline-block;
   background-image: url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
   background-size: 100% 100%;
-  width: 380px;
+  width: 330px;
   height: 230px;
-  margin-left: 22px;
-  margin-right: 22px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+main .story-about-us-block section .images .second-image:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
+  -webkit-box-shadow: 7px 7px #7dcfb6;
+          box-shadow: 7px 7px #7dcfb6;
+}
+
+main .story-about-us-block section .images .second-image:hover .overlay {
+  visibility: visible;
 }
 
 main .story-about-us-block section .images .third-image {
   display: inline-block;
   background-image: url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
   background-size: 100% 100%;
-  width: 380px;
+  width: 330px;
   height: 230px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+main .story-about-us-block section .images .third-image:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
+  -webkit-box-shadow: 7px 7px #7dcfb6;
+          box-shadow: 7px 7px #7dcfb6;
+}
+
+main .story-about-us-block section .images .third-image:hover .overlay {
+  visibility: visible;
 }
 
 main .statistics-block {
@@ -300,6 +345,12 @@ main .statistics-block section .stats span {
   }
   .mobile-menu .mobile-nav-links {
     z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .second-image {
+    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
