@@ -41,6 +41,15 @@ span {
   margin-bottom: 35px;
 }
 
+.rectangle-red {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  border-top: 2px solid #c32f27;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .active-button {
   border: 2px solid #ffffff;
   border-radius: 4px;
@@ -231,9 +240,8 @@ main section .story-about-us-block h1 {
   margin-top: 15px;
 }
 
-main section .story-about-us-block .rectangle {
+main section .story-about-us-block .rectangle-red {
   border-top: 2px solid #c32f27;
-  margin-top: 35px;
 }
 
 main section .story-about-us-block p {
@@ -349,82 +357,80 @@ main section .statistics-block .stats:nth-child(5) {
   border-right: 1px solid #ffffff;
 }
 
-section .services-block {
+section .amazing-services-block {
   margin-top: 75px;
   text-align: center;
 }
 
-section .services-block span {
+section .amazing-services-block span {
   font-size: 1.5rem;
 }
 
-section .services-block h1 {
+section .amazing-services-block h1 {
   margin-top: 15px;
 }
 
-section .services-block .rectangle {
-  border-top: 2px solid #c32f27;
-  margin-top: 35px;
+section .amazing-services-block .rectangle-red {
   margin-bottom: 60px;
 }
 
-section .services-block .upper-content {
+section .amazing-services-block .upper-content {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-section .services-block .upper-content .content-wrapper {
+section .amazing-services-block .upper-content .content-wrapper {
   display: inline-block;
   width: 33%;
   text-align: left;
   height: 150px;
 }
 
-section .services-block .upper-content .content-wrapper .img {
+section .amazing-services-block .upper-content .content-wrapper .img {
   float: left;
 }
 
-section .services-block .upper-content .content-wrapper .content {
+section .amazing-services-block .upper-content .content-wrapper .content {
   float: right;
   width: 85%;
 }
 
-section .services-block .upper-content .content-wrapper .content h5 {
+section .amazing-services-block .upper-content .content-wrapper .content h5 {
   margin-bottom: 10px;
 }
 
-section .services-block .upper-content .content-wrapper .content p {
+section .amazing-services-block .upper-content .content-wrapper .content p {
   color: #adb5bd;
 }
 
-section .services-block .lower-content {
+section .amazing-services-block .lower-content {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-section .services-block .lower-content .content-wrapper {
+section .amazing-services-block .lower-content .content-wrapper {
   display: inline-block;
   width: 33%;
   text-align: left;
   height: 150px;
 }
 
-section .services-block .lower-content .content-wrapper .img {
+section .amazing-services-block .lower-content .content-wrapper .img {
   float: left;
 }
 
-section .services-block .lower-content .content-wrapper .content {
+section .amazing-services-block .lower-content .content-wrapper .content {
   float: right;
   width: 85%;
 }
 
-section .services-block .lower-content .content-wrapper .content h5 {
+section .amazing-services-block .lower-content .content-wrapper .content h5 {
   margin-bottom: 10px;
 }
 
-section .services-block .lower-content .content-wrapper .content p {
+section .amazing-services-block .lower-content .content-wrapper .content p {
   color: #adb5bd;
 }
 
@@ -447,11 +453,11 @@ section .unique-design-block .content-wrapper h1 {
   margin-top: 15px;
 }
 
-section .unique-design-block .content-wrapper .rectangle {
-  border-top: 2px solid #c32f27;
-  margin-top: 35px;
-  margin-bottom: 60px;
-  opacity: 100;
+section .unique-design-block .content-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 0px;
+  margin-left: 50px;
 }
 
 section .unique-design-block::before {
@@ -460,10 +466,30 @@ section .unique-design-block::before {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.826768) 100%, rgba(9, 9, 121, 0.487833) 100%, #00d4ff 100%), url("../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
   background-size: 100% 100%;
   width: 100%;
-  height: 65vh;
+  height: 58.8vh;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   position: absolute;
+}
+
+section .service-block {
+  text-align: center;
+  margin-top: 15px;
+}
+
+section .service-block span {
+  font-size: 1.5rem;
+}
+
+section .service-block h1 {
+  margin-top: 15px;
+}
+
+section .service-block p {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  color: #adb5bd;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -485,10 +511,13 @@ section .unique-design-block::before {
   .upper-content {
     width: 100% !important;
   }
+  .upper-content .content-wrapper {
+    width: 32% !important;
+  }
   .lower-content {
     width: 100% !important;
   }
-  .content-wrapper {
+  .lower-content .content-wrapper {
     width: 32% !important;
   }
 }
