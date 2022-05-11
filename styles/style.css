@@ -20,6 +20,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -80,7 +85,7 @@ header {
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/header-image/pexels-radovan-zierik-5138164.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 73vh;
+  height: auto;
 }
 
 header nav {
@@ -158,6 +163,7 @@ header .header-content button:hover {
 header .header-bottom-content {
   text-align: center;
   display: block;
+  padding-bottom: 15px;
 }
 
 header .header-bottom-content section {
@@ -207,46 +213,46 @@ header .header-bottom-content section .border-top p {
   padding-top: 10px;
 }
 
-main .story-about-us-block {
+main section {
   display: block;
   margin: 0 auto;
 }
 
-main .story-about-us-block section {
+main section .story-about-us-block {
   padding-top: 75px;
   text-align: center;
 }
 
-main .story-about-us-block section span {
+main section .story-about-us-block span {
   font-size: 1.5rem;
 }
 
-main .story-about-us-block section h1 {
+main section .story-about-us-block h1 {
   margin-top: 15px;
 }
 
-main .story-about-us-block section .rectangle {
+main section .story-about-us-block .rectangle {
   border-top: 2px solid #c32f27;
   margin-top: 35px;
 }
 
-main .story-about-us-block section p {
+main section .story-about-us-block p {
   width: 80%;
   margin: 0 auto;
   color: #adb5bd;
 }
 
-main .story-about-us-block section .images {
+main section .story-about-us-block .images {
   margin-top: 80px;
 }
 
-main .story-about-us-block section .images .image-container {
+main section .story-about-us-block .images .image-wrapper {
   display: inline-block;
   padding: 15px;
   max-width: 100%;
 }
 
-main .story-about-us-block section .images .image-container .first-image {
+main section .story-about-us-block .images .image-wrapper .first-image {
   background-image: url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
   background-size: 100% 100%;
   width: 330px;
@@ -255,18 +261,18 @@ main .story-about-us-block section .images .image-container .first-image {
   cursor: pointer;
 }
 
-main .story-about-us-block section .images .image-container .first-image:hover {
+main section .story-about-us-block .images .image-wrapper .first-image:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
   -webkit-box-shadow: 7px 7px #7dcfb6;
           box-shadow: 7px 7px #7dcfb6;
 }
 
-main .story-about-us-block section .images .image-container .first-image:hover .overlay {
+main section .story-about-us-block .images .image-wrapper .first-image:hover .overlay {
   visibility: visible;
 }
 
-main .story-about-us-block section .images .image-container .second-image {
+main section .story-about-us-block .images .image-wrapper .second-image {
   background-image: url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
   background-size: 100% 100%;
   width: 330px;
@@ -277,18 +283,18 @@ main .story-about-us-block section .images .image-container .second-image {
   cursor: pointer;
 }
 
-main .story-about-us-block section .images .image-container .second-image:hover {
+main section .story-about-us-block .images .image-wrapper .second-image:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
   -webkit-box-shadow: 7px 7px #7dcfb6;
           box-shadow: 7px 7px #7dcfb6;
 }
 
-main .story-about-us-block section .images .image-container .second-image:hover .overlay {
+main section .story-about-us-block .images .image-wrapper .second-image:hover .overlay {
   visibility: visible;
 }
 
-main .story-about-us-block section .images .image-container .third-image {
+main section .story-about-us-block .images .image-wrapper .third-image {
   background-image: url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
   background-size: 100% 100%;
   width: 330px;
@@ -297,14 +303,14 @@ main .story-about-us-block section .images .image-container .third-image {
   cursor: pointer;
 }
 
-main .story-about-us-block section .images .image-container .third-image:hover {
+main section .story-about-us-block .images .image-wrapper .third-image:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
   -webkit-box-shadow: 7px 7px #7dcfb6;
           box-shadow: 7px 7px #7dcfb6;
 }
 
-main .story-about-us-block section .images .image-container .third-image:hover .overlay {
+main section .story-about-us-block .images .image-wrapper .third-image:hover .overlay {
   visibility: visible;
 }
 
@@ -323,7 +329,7 @@ main .statistics-block section .stats {
   display: inline-block;
   color: #ffffff;
   border-left: 1px solid #ffffff;
-  padding: 88px 28px 88px 28px;
+  padding: 58px 28px 58px 28px;
   width: 180px;
 }
 
@@ -342,30 +348,109 @@ main .statistics-block section .stats:nth-child(5) {
   border-right: 1px solid #ffffff;
 }
 
-.services-block {
+section .services-block {
   margin-top: 75px;
-}
-
-.services-block section {
   text-align: center;
 }
 
-.services-block section span {
+section .services-block span {
   font-size: 1.5rem;
 }
 
-.services-block section h1 {
+section .services-block h1 {
   margin-top: 15px;
 }
 
-.services-block section .rectangle {
+section .services-block .rectangle {
   border-top: 2px solid #c32f27;
   margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+section .services-block .upper-content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section .services-block .upper-content .content-wrapper {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  height: 150px;
+}
+
+section .services-block .upper-content .content-wrapper .img {
+  float: left;
+}
+
+section .services-block .upper-content .content-wrapper .content {
+  float: right;
+  width: 85%;
+}
+
+section .services-block .upper-content .content-wrapper .content h5 {
+  margin-bottom: 10px;
+}
+
+section .services-block .upper-content .content-wrapper .content p {
+  color: #adb5bd;
+}
+
+section .services-block .lower-content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section .services-block .lower-content .content-wrapper {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  height: 150px;
+}
+
+section .services-block .lower-content .content-wrapper .img {
+  float: left;
+}
+
+section .services-block .lower-content .content-wrapper .content {
+  float: right;
+  width: 85%;
+}
+
+section .services-block .lower-content .content-wrapper .content h5 {
+  margin-bottom: 10px;
+}
+
+section .services-block .lower-content .content-wrapper .content p {
+  color: #adb5bd;
 }
 
 @media only screen and (max-width: 1450px) {
   .container {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
+  .upper-content {
+    width: 100% !important;
+  }
+  .lower-content {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 852px) {
+  .upper-content {
+    width: 100% !important;
+  }
+  .lower-content {
+    width: 100% !important;
+  }
+  .content-wrapper {
+    width: 32% !important;
   }
 }
 
@@ -381,6 +466,24 @@ main .statistics-block section .stats:nth-child(5) {
   }
   .mobile-menu .mobile-nav-links {
     z-index: 10;
+  }
+  .upper-content .content-wrapper .img {
+    margin-left: 30px;
+  }
+  .lower-content {
+    padding-top: 95px;
+  }
+  .lower-content .content-wrapper .img {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .upper-content .content-wrapper .img {
+    margin-left: 10px;
+  }
+  .lower-content .content-wrapper .img {
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

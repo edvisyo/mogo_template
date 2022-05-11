@@ -27,6 +27,11 @@ h1 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
  p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
@@ -82,7 +87,8 @@ header {
     background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/header-image/pexels-radovan-zierik-5138164.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 73vh;
+    // height: 73vh;
+    height: auto;
     nav {
         display: block;
         padding-top: 20px;
@@ -149,6 +155,7 @@ header {
     .header-bottom-content {
         text-align: center;
         display: block;
+        padding-bottom: 15px;
         section {
             display: inline-block;
             color: $whiteColor;
@@ -192,10 +199,10 @@ header {
 }
 
 main {
-    .story-about-us-block{
+    section {
         display: block;
         margin: 0 auto;
-        section {
+        .story-about-us-block {
             padding-top: 75px;
             text-align: center;
             span {
@@ -215,7 +222,7 @@ main {
             } 
             .images {
                 margin-top: 80px;
-                .image-container {
+                .image-wrapper {
                     display: inline-block;
                     padding: 15px;
                     max-width: 100%;
@@ -282,7 +289,7 @@ main {
                 display: inline-block;
                 color: $whiteColor;
                 border-left: 1px solid $whiteColor;
-                padding: 88px 28px 88px 28px;
+                padding: 58px 28px 58px 28px;
                 width: 180px;
                 .number {
                     font-family: 'Montserrat', sans-serif;
@@ -302,9 +309,9 @@ main {
     }
 }
 
-.services-block {
-    margin-top: 75px;
-    section {
+ section {
+    .services-block {
+        margin-top: 75px;
         text-align: center;
         span {
             font-size: $spanFontSize;
@@ -315,6 +322,55 @@ main {
         .rectangle {
             border-top: 2px solid $redColor;
             margin-top: $headerMargin;
+            margin-bottom: 60px;
+        }
+        .upper-content {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .content-wrapper {
+                display: inline-block;
+                width: 33%;
+                text-align: left;
+                height: 150px;
+                .img {
+                    float: left;
+                }
+                .content {
+                    float: right;
+                    width: 85%;
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        color: $greyColor
+                    }
+                }
+            }
+        }
+        .lower-content {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .content-wrapper {
+                display: inline-block;
+                width: 33%;
+                text-align: left;
+                height: 150px;
+                .img {
+                    float: left;
+                }
+                .content {
+                    float: right;
+                    width: 85%;
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        color: $greyColor
+                    }
+                }
+            }   
         }
     }
 }
@@ -338,6 +394,27 @@ main {
     // }
 }
 
+@media only screen and (max-width: 1062px) {
+    .upper-content {
+        width: 100% !important;
+    }
+    .lower-content {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 852px) {
+    .upper-content {
+        width: 100% !important;
+    }
+    .lower-content {
+        width: 100% !important;
+    }
+    .content-wrapper {
+        width: 32% !important;
+    }
+}
+
 @media only screen and (max-width: 730px) {
     .container {
         width: 90%;
@@ -349,6 +426,38 @@ main {
         display: block;
         .mobile-nav-links {
             z-index: 10;
+        }
+    }
+    .upper-content {
+        .content-wrapper {
+            .img {
+                margin-left: 30px;
+            }
+        }
+    }
+    .lower-content {
+        padding-top: 95px;
+        .content-wrapper {
+            .img {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .upper-content {
+        .content-wrapper {
+            .img {
+                margin-left: 10px;
+            }
+        }
+    }
+    .lower-content {
+        .content-wrapper {
+            .img {
+                margin-left: 10px;
+            }
         }
     }
 }
