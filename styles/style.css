@@ -314,18 +314,18 @@ main section .story-about-us-block .images .image-wrapper .third-image:hover .ov
   visibility: visible;
 }
 
-main .statistics-block {
+main section {
   display: block;
-  margin-top: 135px;
-  background-color: #7dcfb6;
   height: auto;
 }
 
-main .statistics-block section {
+main section .statistics-block {
   text-align: center;
+  background-color: #7dcfb6;
+  margin-top: 105px;
 }
 
-main .statistics-block section .stats {
+main section .statistics-block .stats {
   display: inline-block;
   color: #ffffff;
   border-left: 1px solid #ffffff;
@@ -333,18 +333,19 @@ main .statistics-block section .stats {
   width: 180px;
 }
 
-main .statistics-block section .stats .number {
+main section .statistics-block .stats .number {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
 }
 
-main .statistics-block section .stats span {
+main section .statistics-block .stats span {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.63rem;
+  opacity: 20;
 }
 
-main .statistics-block section .stats:nth-child(5) {
+main section .statistics-block .stats:nth-child(5) {
   border-right: 1px solid #ffffff;
 }
 
@@ -425,6 +426,44 @@ section .services-block .lower-content .content-wrapper .content h5 {
 
 section .services-block .lower-content .content-wrapper .content p {
   color: #adb5bd;
+}
+
+section .unique-design-block {
+  position: relative;
+}
+
+section .unique-design-block .content-wrapper {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 75px;
+}
+
+section .unique-design-block .content-wrapper span {
+  font-size: 1.5rem;
+}
+
+section .unique-design-block .content-wrapper h1 {
+  margin-top: 15px;
+}
+
+section .unique-design-block .content-wrapper .rectangle {
+  border-top: 2px solid #c32f27;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  opacity: 100;
+}
+
+section .unique-design-block::before {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(255, 255, 255, 0.826768)), color-stop(100%, rgba(9, 9, 121, 0.487833)), to(#00d4ff)), url("../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.826768) 100%, rgba(9, 9, 121, 0.487833) 100%, #00d4ff 100%), url("../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 65vh;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  position: absolute;
 }
 
 @media only screen and (max-width: 1450px) {

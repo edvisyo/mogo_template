@@ -87,7 +87,6 @@ header {
     background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/header-image/pexels-radovan-zierik-5138164.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    // height: 73vh;
     height: auto;
     nav {
         display: block;
@@ -160,7 +159,6 @@ header {
             display: inline-block;
             color: $whiteColor;
             width: 12vw;
-            // width: 17%;
             text-align: left;
             margin: 10px;
             p {
@@ -278,13 +276,13 @@ main {
             }  
         }
     }
-    .statistics-block {
+    section {
         display: block;
-        margin-top: 135px;
-        background-color: $lightGreenColor;
         height: auto;
-        section {
+        .statistics-block {
             text-align: center;
+            background-color: $lightGreenColor;
+            margin-top: 105px;
             .stats {
                 display: inline-block;
                 color: $whiteColor;
@@ -298,7 +296,8 @@ main {
                 span {
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     text-transform: uppercase;
-                    font-size: 0.6rem;
+                    font-size: 0.63rem;
+                    opacity: 20;
                 }
             }
             .stats:nth-child(5) {
@@ -372,6 +371,39 @@ main {
                 }
             }   
         }
+    }
+}
+
+section {
+    .unique-design-block {
+        position: relative;
+        .content-wrapper {
+            display: block;
+            position: relative;
+            text-align: center;
+            padding-top: 75px;
+            span {
+                font-size: $spanFontSize;
+            }
+            h1 {
+                margin-top: 15px;
+            }
+            .rectangle {
+                border-top: 2px solid $redColor;
+                margin-top: $headerMargin;
+                margin-bottom: 60px;
+                opacity: 100;
+            }
+        }
+    }
+    .unique-design-block::before {
+        content: "";
+        background-image: linear-gradient(90deg, rgba(255,255,255,0.8267682072829132) 100%, rgba(9,9,121,0.48783263305322133) 100%, rgba(0,212,255,1) 100%), url('../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg');
+        background-size: 100% 100%;
+        width: 100%;
+        height: 65vh;
+        filter: grayscale(1);
+        position: absolute;
     }
 }
 
