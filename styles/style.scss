@@ -296,7 +296,7 @@ main {
                 color: $whiteColor;
                 border-left: 1px solid $whiteColor;
                 padding: 58px 28px 58px 28px;
-                width: 180px;
+                width: 275px;
                 .number {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 3rem;
@@ -395,10 +395,9 @@ section {
                 margin-top: 15px;
             }
             img {
-                width: 100%;
-                max-width: 400px;
-                padding-top: 0px;
-                margin-left: 50px;
+                // width: 100vw;
+                max-width: 25vw;
+                // padding-top: 150px;
             }
         }
     }
@@ -407,7 +406,7 @@ section {
         background-image: linear-gradient(90deg, rgba(255,255,255,0.8267682072829132) 100%, rgba(9,9,121,0.48783263305322133) 100%, rgba(0,212,255,1) 100%), url('../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg');
         background-size: 100% 100%;
         width: 100%;
-        height: 58.8vh;
+        height: 90.2%;
         filter: grayscale(1);
         position: absolute;
     }

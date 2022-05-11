@@ -338,7 +338,7 @@ main section .statistics-block .stats {
   color: #ffffff;
   border-left: 1px solid #ffffff;
   padding: 58px 28px 58px 28px;
-  width: 180px;
+  width: 275px;
 }
 
 main section .statistics-block .stats .number {
@@ -454,10 +454,7 @@ section .unique-design-block .content-wrapper h1 {
 }
 
 section .unique-design-block .content-wrapper img {
-  width: 100%;
-  max-width: 400px;
-  padding-top: 0px;
-  margin-left: 50px;
+  max-width: 25vw;
 }
 
 section .unique-design-block::before {
@@ -466,7 +463,7 @@ section .unique-design-block::before {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.826768) 100%, rgba(9, 9, 121, 0.487833) 100%, #00d4ff 100%), url("../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
   background-size: 100% 100%;
   width: 100%;
-  height: 58.8vh;
+  height: 90.2%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   position: absolute;
