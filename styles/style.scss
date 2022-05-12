@@ -1,5 +1,6 @@
 $whiteColor: #ffffff;
 $greyColor: #adb5bd;
+$lightGreyColor: #faf9f9;
 $redColor: #c32f27;
 $lightGreenColor: #7dcfb6;
 $headerMargin: 35px;
@@ -439,6 +440,7 @@ section {
         }
         .dropdowns {
             float: right;
+            margin-bottom: 95px !important;
             .dropdown {
                 width: 490px;
                 .dropdown-wrapper {
@@ -480,18 +482,19 @@ section {
                 }
             }
             ::-webkit-scrollbar {
-                width: 4px; 
+                width: 4px;
             }
           
             ::-webkit-scrollbar-track {
                 background-color: lightgray;
                 margin-top: 13px;
                 margin-bottom: 13px;
+                border-radius: 30px;
             }
           
             ::-webkit-scrollbar-thumb {
-                background: $lightGreenColor;;
-                border-radius: 25px;
+                background: $lightGreenColor;
+                border-radius: 30px;
             }
             .dropdown:nth-child(2) {
                 margin-top: 10px;
@@ -507,6 +510,57 @@ section {
                     margin-left: 154px !important;
                 }
             }
+        }
+    }
+}
+
+section {
+    .carousele-block {
+        display: block;
+        clear: both;
+        background-color: $lightGreyColor;
+        height: auto; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .icon-left {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 50px;
+        }
+        .image {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 50px;
+            img {
+                // width: 100px;
+                border: 3px solid $lightGreenColor;
+                padding: 30px;
+            }
+        }
+        .content {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70%;
+            margin: 0 auto;
+            .author-name {
+                margin-top: 15px;
+                .rectangle-red {
+                    margin-left: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            span {
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+        }
+        .icon-right {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 50px;
         }
     }
 }
@@ -584,7 +638,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 511px) {
     .upper-content {
         .content-wrapper {
             .img {
@@ -596,6 +650,14 @@ section {
         .content-wrapper {
             .img {
                 margin-left: 10px;
+            }
+        }
+    }
+    section {
+        .carousele-block {
+            text-align: center;
+            .content {
+                text-align: left;
             }
         }
     }

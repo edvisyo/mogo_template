@@ -502,6 +502,7 @@ section .service-block .img img {
 
 section .service-block .dropdowns {
   float: right;
+  margin-bottom: 95px !important;
 }
 
 section .service-block .dropdowns .dropdown {
@@ -561,11 +562,12 @@ section .service-block .dropdowns ::-webkit-scrollbar-track {
   background-color: lightgray;
   margin-top: 13px;
   margin-bottom: 13px;
+  border-radius: 30px;
 }
 
 section .service-block .dropdowns ::-webkit-scrollbar-thumb {
   background: #7dcfb6;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 section .service-block .dropdowns .dropdown:nth-child(2) {
@@ -584,6 +586,62 @@ section .service-block .dropdowns .dropdown:nth-child(3) {
 section .service-block .dropdowns .dropdown:nth-child(3) .dropdown-heading {
   margin-right: 154px !important;
   margin-left: 154px !important;
+}
+
+section .carousele-block {
+  display: block;
+  clear: both;
+  background-color: #faf9f9;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section .carousele-block .icon-left {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+section .carousele-block .image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+section .carousele-block .image img {
+  border: 3px solid #7dcfb6;
+  padding: 30px;
+}
+
+section .carousele-block .content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section .carousele-block .content .author-name {
+  margin-top: 15px;
+}
+
+section .carousele-block .content .author-name .rectangle-red {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section .carousele-block .content span {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+section .carousele-block .icon-right {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -640,12 +698,18 @@ section .service-block .dropdowns .dropdown:nth-child(3) .dropdown-heading {
   }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 511px) {
   .upper-content .content-wrapper .img {
     margin-left: 10px;
   }
   .lower-content .content-wrapper .img {
     margin-left: 10px;
+  }
+  section .carousele-block {
+    text-align: center;
+  }
+  section .carousele-block .content {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
