@@ -296,7 +296,7 @@ main {
                 color: $whiteColor;
                 border-left: 1px solid $whiteColor;
                 padding: 58px 28px 58px 28px;
-                width: 275px;
+                width: 19.7%;
                 .number {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 3rem;
@@ -414,8 +414,8 @@ section {
 
 section {
     .service-block {
+        display: block;
         text-align: center;
-        margin-top: 15px;
         span {
             font-size: $spanFontSize;
         }
@@ -427,6 +427,86 @@ section {
             width: 70%;
             margin: 0 auto;
             color: $greyColor;
+            padding-bottom: 95px;
+        }
+        .img {
+            float: left;
+            img {
+                width: 100%;
+                max-width: 490px;
+                height: 380px;
+            }
+        }
+        .dropdowns {
+            float: right;
+            .dropdown {
+                width: 490px;
+                .dropdown-wrapper {
+                    border: 1px solid $greyColor;
+                    .dropdown-header {
+                        border-bottom: 1px solid $greyColor;
+                        padding-top: 10px;
+                        padding-bottom: 6px;
+                        .dropdown-image {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .dropdown-heading {
+                            display: inline-block;
+                            margin-right: 145px;
+                            margin-left: 145px;
+                        }
+                        .dropdown-button {
+                            display: inline-block;
+                            vertical-align: middle;
+                            button {
+                                border: none;
+                                background: transparent;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .dropdown-content {
+                        text-align: left;
+                        width: 467px;
+                        overflow-y: scroll;
+                        height: 195px;
+                        p {
+                            width: 100%;
+                            padding: 13px;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+            ::-webkit-scrollbar {
+                width: 4px; 
+            }
+          
+            ::-webkit-scrollbar-track {
+                background-color: lightgray;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
+          
+            ::-webkit-scrollbar-thumb {
+                background: $lightGreenColor;;
+                border-radius: 25px;
+            }
+            .dropdown:nth-child(2) {
+                margin-top: 10px;
+                .dropdown-heading {
+                    margin-right: 160px !important;
+                    margin-left: 160px !important;
+                }
+            }
+            .dropdown:nth-child(3) {
+                margin-top: 10px;
+                .dropdown-heading {
+                    margin-right: 154px !important;
+                    margin-left: 154px !important;
+                }
+            }
         }
     }
 }
