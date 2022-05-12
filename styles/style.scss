@@ -93,6 +93,41 @@ span {
     }
 }
 
+.overlay-with-social {
+    visibility: hidden;
+    img {
+        margin-top: 95px;
+    }
+    img:nth-child(1) {
+        background-color: rgba(255,117,110,0.84);
+        padding: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        float: left;
+        margin-left: 75px;
+    }
+    img:nth-child(2) {
+        background-color: rgba(255,208,107,0.84);
+        padding: 10px;
+        padding-bottom: 14px;
+        float: left;
+    }
+    img:nth-child(3) {
+        background-color: rgba(255,208,107,0.84);
+        padding: 10px;
+        float: left;
+        border-left: 1px solid rgba(255,117,110,0.84);
+        border-right: 1px solid rgba(255,117,110,0.84);
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    img:nth-child(4) {
+        background-color: rgba(255,208,107,0.84);
+        padding: 10px;
+        float: left;
+    }
+}
+
 header {
     background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/header-image/pexels-radovan-zierik-5138164.jpg');
     background-size: 100% 100%;
@@ -522,6 +557,7 @@ section {
         height: auto; 
         padding-top: 50px;
         padding-bottom: 50px;
+        margin-bottom: 65px;
         .icon-left {
             display: inline-block;
             vertical-align: middle;
@@ -561,6 +597,80 @@ section {
             display: inline-block;
             vertical-align: middle;
             margin-left: 50px;
+        }
+    }
+}
+
+section {
+    .meet-our-team-block {
+        text-align: center;
+        span {
+            font-size: $spanFontSize;
+        }
+        h1 {
+            margin-top: 15px;
+        }
+        p {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            color: $greyColor;
+            padding-bottom: 95px;
+        }
+        .images {
+            .image-wrapper {
+                display: inline-block;
+                padding: 15px;
+                max-width: 100%;
+                .first-image {
+                    background-image: url('../../assets/first-block-images/pexels-pixabay-39578.jpg');
+                    background-size: 100% 100%;
+                    width: 330px;
+                    height: 230px;
+                    max-width: 100%;
+                    cursor: pointer;
+                }
+                .first-image:hover {
+                    background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-pixabay-39578.jpg');
+                    box-shadow: 7px 7px $lightGreenColor;
+                    .overlay-with-social {
+                        visibility: visible;
+                    }
+                }
+
+                .second-image {
+                    background-image: url('../../assets/first-block-images/pexels-garrett-morrow-610945.jpg');
+                    background-size: 100% 100%;
+                    width: 330px;
+                    height: 230px;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+                .second-image:hover {
+                    background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-garrett-morrow-610945.jpg');
+                    box-shadow: 7px 7px $lightGreenColor;
+                    .overlay-with-social {
+                        visibility: visible;
+                    }
+                }
+
+                .third-image {
+                    background-image: url('../../assets/first-block-images/pexels-reezky-pradata-441963.jpg');
+                    background-size: 100% 100%;
+                    width: 330px;
+                    height: 230px;
+                    max-width: 100%;
+                    cursor: pointer;
+                }
+                .third-image:hover {
+                    background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-reezky-pradata-441963.jpg');
+                    box-shadow: 7px 7px $lightGreenColor;
+                    .overlay-with-social {
+                        visibility: visible;
+                    }
+                }
+            }
         }
     }
 }
