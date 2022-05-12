@@ -773,6 +773,64 @@ section .meet-our-team-block .images .image-wrapper .third-image:hover .overlay-
   visibility: visible;
 }
 
+section {
+  display: block;
+  height: auto;
+}
+
+section .random-logos {
+  text-align: center;
+  background-color: #7dcfb6;
+  margin-top: 105px;
+}
+
+section .random-logos .logo {
+  display: inline-block;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  padding: 58px 28px 58px 28px;
+  width: 19.7%;
+}
+
+section .random-logos .logo span {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.63rem;
+  opacity: 20;
+}
+
+section .random-logos .stats:nth-child(5) {
+  border-right: 1px solid #ffffff;
+}
+
+section {
+  display: block;
+  margin: 0 auto;
+}
+
+section .our-work-block {
+  padding-top: 75px;
+  text-align: center;
+}
+
+section .our-work-block span {
+  font-size: 1.5rem;
+}
+
+section .our-work-block h1 {
+  margin-top: 15px;
+}
+
+section .our-work-block .rectangle-red {
+  border-top: 2px solid #c32f27;
+}
+
+section .our-work-block p {
+  width: 80%;
+  margin: 0 auto;
+  color: #adb5bd;
+}
+
 @media only screen and (max-width: 1450px) {
   .container {
     width: 95%;
