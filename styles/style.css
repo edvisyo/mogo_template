@@ -892,20 +892,51 @@ main section .what-people-say-block {
 main section .what-people-say-block .content-wrapper {
   display: block;
   position: relative;
-  text-align: center;
   padding-top: 75px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-main section .what-people-say-block .content-wrapper span {
+main section .what-people-say-block .content-wrapper .heading {
+  text-align: center;
+}
+
+main section .what-people-say-block .content-wrapper .heading span {
   font-size: 1.5rem;
 }
 
-main section .what-people-say-block .content-wrapper h1 {
+main section .what-people-say-block .content-wrapper .heading h1 {
   margin-top: 15px;
 }
 
-main section .what-people-say-block .content-wrapper img {
-  max-width: 25vw;
+main section .what-people-say-block .content-wrapper .block-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  width: 49%;
+}
+
+main section .what-people-say-block .content-wrapper .block-wrapper .person .image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main section .what-people-say-block .content-wrapper .block-wrapper .person .image img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section .what-people-say-block .content-wrapper .block-wrapper .person .context {
+  display: inline-block;
+  width: 60%;
+}
+
+main section .what-people-say-block .content-wrapper .block-wrapper .person .context .rectangle-red {
+  margin-left: 0;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 main section .what-people-say-block::before {
@@ -914,7 +945,7 @@ main section .what-people-say-block::before {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.826768) 100%, rgba(9, 9, 121, 0.487833) 100%, #00d4ff 100%), url("../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
   background-size: 100% 100%;
   width: 100%;
-  height: 90.2%;
+  height: 100%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   position: absolute;

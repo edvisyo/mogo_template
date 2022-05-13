@@ -781,18 +781,56 @@ main {
             .content-wrapper {
                 display: block;
                 position: relative;
-                text-align: center;
                 padding-top: 75px;
-                span {
-                    font-size: $spanFontSize;
+                width: 90%;
+                margin: 0 auto;
+                .heading {
+                    text-align: center;
+                    span {
+                        font-size: $spanFontSize;
+                    }
+                    h1 {
+                        margin-top: 15px;
+                    }
                 }
-                h1 {
-                    margin-top: 15px;
-                }
-                img {
-                    // width: 100vw;
-                    max-width: 25vw;
-                    // padding-top: 150px;
+                .block-wrapper {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 49%;
+                    // margin: 0 auto; 
+                    .person {
+                        // text-align: center;
+                        // width: 80%;
+                        .image {
+                            display: inline-block;
+                            vertical-align: top;
+                            img {
+                                border-radius: 50%;
+                                height: 100px;
+                                width: 100px;
+                                object-fit: cover;
+                                // object-position: 30% 0;
+                            }
+                        }
+                        .context {
+                            display: inline-block;
+                            width: 60%; 
+                            h5 {
+
+                            }
+                            span {
+
+                            }
+                            .rectangle-red {
+                                margin-left: 0;
+                                margin-top: 10px !important;
+                                margin-bottom: 10px !important;
+                            }
+                            p {
+                                
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -801,7 +839,7 @@ main {
             background-image: linear-gradient(90deg, rgba(255,255,255,0.8267682072829132) 100%, rgba(9,9,121,0.48783263305322133) 100%, rgba(0,212,255,1) 100%), url('../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg');
             background-size: 100% 100%;
             width: 100%;
-            height: 90.2%;
+            height: 100%;
             filter: grayscale(1);
             position: absolute;
         }
