@@ -1,6 +1,8 @@
 $whiteColor: #ffffff;
 $greyColor: #adb5bd;
 $lightGreyColor: #faf9f9;
+// $lightGreyColor2: #f8f9fa;
+$lightGreyColor2: #f5f3f4;
 $redColor: #c32f27;
 $lightGreenColor: #7dcfb6;
 $headerMargin: 35px;
@@ -96,7 +98,7 @@ span {
 .overlay-with-social {
     visibility: hidden;
     img {
-        margin-top: 95px;
+        margin-top: 170px;
     }
     img:nth-child(1) {
         background-color: rgba(255,117,110,0.84);
@@ -104,7 +106,7 @@ span {
         padding-left: 16px;
         padding-right: 16px;
         float: left;
-        margin-left: 75px;
+        margin-left: 65px;
     }
     img:nth-child(2) {
         background-color: rgba(255,208,107,0.84);
@@ -553,7 +555,7 @@ main {
         .carousele-block {
             display: block;
             clear: both;
-            background-color: $lightGreyColor;
+            background-color: $lightGreyColor2;
             height: auto; 
             padding-top: 50px;
             padding-bottom: 50px;
@@ -623,15 +625,16 @@ main {
                     padding: 15px;
                     max-width: 100%;
                     .first-image {
-                        background-image: url('../../assets/first-block-images/pexels-pixabay-39578.jpg');
-                        background-size: 100% 100%;
-                        width: 330px;
-                        height: 230px;
+                        background-image: url('../../assets/meet-our-team-images/Layer 16.jpg');
+                        background-size: cover;
+                        background-position: 24% 0;
+                        width: 310px;
+                        height: 380px;
                         max-width: 100%;
                         cursor: pointer;
                     }
                     .first-image:hover {
-                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-pixabay-39578.jpg');
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/meet-our-team-images/Layer 16.jpg');
                         box-shadow: 7px 7px $lightGreenColor;
                         .overlay-with-social {
                             visibility: visible;
@@ -639,16 +642,17 @@ main {
                     }
     
                     .second-image {
-                        background-image: url('../../assets/first-block-images/pexels-garrett-morrow-610945.jpg');
-                        background-size: 100% 100%;
-                        width: 330px;
-                        height: 230px;
+                        background-image: url('../../assets/meet-our-team-images/Layer 19.jpg');
+                        background-size: cover;
+                        background-position: 60% 0;
+                        width: 310px;
+                        height: 380px;
                         max-width: 100%;
                         box-sizing: border-box;
                         cursor: pointer;
                     }
                     .second-image:hover {
-                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-garrett-morrow-610945.jpg');
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/meet-our-team-images/Layer 19.jpg');
                         box-shadow: 7px 7px $lightGreenColor;
                         .overlay-with-social {
                             visibility: visible;
@@ -656,18 +660,25 @@ main {
                     }
     
                     .third-image {
-                        background-image: url('../../assets/first-block-images/pexels-reezky-pradata-441963.jpg');
-                        background-size: 100% 100%;
-                        width: 330px;
-                        height: 230px;
+                        background-image: url('../../assets/meet-our-team-images/Layer 18.jpg');
+                        background-size: cover;
+                        background-position: 50% 0;
+                        width: 310px;
+                        height: 380px;
                         max-width: 100%;
                         cursor: pointer;
                     }
                     .third-image:hover {
-                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/first-block-images/pexels-reezky-pradata-441963.jpg');
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/meet-our-team-images/Layer 18.jpg');
                         box-shadow: 7px 7px $lightGreenColor;
                         .overlay-with-social {
                             visibility: visible;
+                        }
+                    }
+                    .person {
+                        margin-top: 25px;
+                        h5 {
+                            margin-bottom: 7px;
                         }
                     }
                 }
@@ -677,28 +688,17 @@ main {
     
     section {
         display: block;
-        height: auto;
         .random-logos {
             text-align: center;
-            background-color: $lightGreenColor;
-            margin-top: 105px;
+            background-color: $lightGreyColor2;
             .logo {
                 display: inline-block;
-                color: $whiteColor;
-                border-left: 1px solid $whiteColor;
-                padding: 58px 28px 58px 28px;
-                width: 19.7%;
-                span {
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    text-transform: uppercase;
-                    font-size: 0.63rem;
-                    opacity: 20;
+                vertical-align: middle;
+                padding: 55px 35px 55px 35px;
+                img {
+                    max-width: 120px;
                 }
-            }
-            .stats:nth-child(5) {
-                border-right: 1px solid $whiteColor;
-            }
-            
+            }            
         }
     }
     
@@ -722,6 +722,56 @@ main {
                 margin: 0 auto;
                 color: $greyColor;
             }   
+        }
+    }
+
+    section {
+        .carousele-block-2 {
+            display: block;
+            // padding-top: 50px;
+            // padding-bottom: 50px;
+            margin-bottom: 105px;
+            .icon-left {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 50px;
+            }
+            .image {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 50px;
+                img {
+                    background-size: 100% 100%;
+                    max-width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                }
+            }
+            .content {
+                display: inline-block;
+                vertical-align: middle;
+                width: 70%;
+                margin: 0 auto;
+                .author-name {
+                    margin-top: 15px;
+                    .rectangle-red {
+                        margin-left: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                span {
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+            }
+            .icon-right {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 50px;
+            }
         }
     }
     
