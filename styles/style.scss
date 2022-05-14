@@ -968,6 +968,7 @@ footer {
         .left-content {
             display: inline-block;
             width: 33%;
+            margin: 0 auto;
             max-width: 100%;
             vertical-align: top;
             h2 {
@@ -982,7 +983,7 @@ footer {
                 input {
                     display: inline-block;
                     height: 39px;
-                    width: 250px;
+                    max-width: 250px;
                     border: 1px solid $greyColor;
                 }
                 ::placeholder {
@@ -1003,6 +1004,7 @@ footer {
         .center-content {
             display: inline-block;
             width: 33%;
+            margin: 0 auto;
             vertical-align: top;
             font-size: 1rem;
             h3 {
@@ -1019,6 +1021,7 @@ footer {
         .right-content {
             display: inline-block;
             width: 33%;
+            margin: 0 auto;
             vertical-align: top;
             font-size: 1rem;
         }
