@@ -960,20 +960,70 @@ main {
 }
 
 footer {
+    font-size: 1rem;
     .mogo-footer {
         // text-align: center;
         margin-top: 150px;
+        font-size: 0;
         .left-content {
             display: inline-block;
             width: 33%;
+            max-width: 100%;
+            vertical-align: top;
+            h2 {
+                font-size: xx-large;
+                margin-bottom: 30px
+            }
+            p {
+                margin-bottom: 30px;
+                font-size: 1rem;
+            }
+            form {
+                input {
+                    display: inline-block;
+                    height: 39px;
+                    width: 250px;
+                    border: 1px solid $greyColor;
+                }
+                ::placeholder {
+                    padding: 26px;
+                }
+                button {
+                    display: inline-block;
+                    padding: 12px 30px 12px 30px;
+                    background-color: $lightGreenColor;
+                    color: $whiteColor;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
         }
         .center-content {
             display: inline-block;
             width: 33%;
+            vertical-align: top;
+            font-size: 1rem;
+            h3 {
+                margin-bottom: 35px;
+            }
+            .blog {
+                .text {
+                    display: inline-block; 
+                    vertical-align: top; 
+                    width: 60%;
+                }
+            }
         }
         .right-content {
             display: inline-block;
             width: 33%;
+            vertical-align: top;
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
         }
     }
 }
