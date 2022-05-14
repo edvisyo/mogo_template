@@ -953,6 +953,7 @@ main section .what-people-say-block::before {
 
 main section .latest-blog-block {
   text-align: center;
+  font-size: 0;
 }
 
 main section .latest-blog-block span {
@@ -964,38 +965,65 @@ main section .latest-blog-block h1 {
 }
 
 main section .latest-blog-block .images .image-wrapper {
+  vertical-align: top;
   display: inline-block;
-  padding: 15px;
-  max-width: 100%;
+  padding: 25px;
+  max-width: 380px;
+  font-size: 1rem;
 }
 
 main section .latest-blog-block .images .image-wrapper .first-image {
-  background-image: url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
+  background-image: url("../../assets/latest-blog-images/Layer 54.jpg");
   background-size: 100% 100%;
-  width: 330px;
   height: 230px;
-  max-width: 100%;
   cursor: pointer;
+}
+
+main section .latest-blog-block .images .image-wrapper .first-image .date {
+  position: absolute;
+  margin-left: -10px;
+  background-color: #7dcfb6;
+  padding: 4px;
+  margin-top: 160px;
+  color: #ffffff;
 }
 
 main section .latest-blog-block .images .image-wrapper .second-image {
-  background-image: url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
+  background-image: url("../../assets/latest-blog-images/Layer 55.jpg");
   background-size: 100% 100%;
-  width: 330px;
   height: 230px;
   max-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   cursor: pointer;
 }
 
+main section .latest-blog-block .images .image-wrapper .second-image .date {
+  position: absolute;
+  margin-left: -10px;
+  background-color: #7dcfb6;
+  padding: 4px;
+  margin-top: 160px;
+  color: #ffffff;
+}
+
 main section .latest-blog-block .images .image-wrapper .third-image {
-  background-image: url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
+  background-image: url("../../assets/latest-blog-images/Layer 57.jpg");
   background-size: 100% 100%;
-  width: 330px;
   height: 230px;
   max-width: 100%;
   cursor: pointer;
+}
+
+main section .latest-blog-block .images .image-wrapper .third-image .date {
+  position: absolute;
+  margin-left: -10px;
+  background-color: #7dcfb6;
+  padding: 4px;
+  margin-top: 160px;
+  color: #ffffff;
+}
+
+main section .latest-blog-block .images .image-wrapper .context {
+  text-align: left;
 }
 
 main section .map-block {
@@ -1006,15 +1034,21 @@ main section .map-block .content-wrapper {
   display: block;
   position: relative;
   text-align: center;
-  padding-top: 75px;
+  padding-top: 65px;
 }
 
 main section .map-block .content-wrapper h1 {
   margin-top: 15px;
+  color: #ff4d6d;
 }
 
-main section .map-block .content-wrapper img {
-  max-width: 25vw;
+main section .map-block .content-wrapper .rectangle-pink {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  border-top: 3px solid #ff4d6d;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 main section .map-block::before {
@@ -1030,51 +1064,22 @@ main section .map-block::before {
 }
 
 footer .mogo-footer {
-  text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
-footer .mogo-footer span {
-  font-size: 1.5rem;
-}
-
-footer .mogo-footer h1 {
-  margin-top: 15px;
-}
-
-footer .mogo-footer .images .image-wrapper {
+footer .mogo-footer .left-content {
   display: inline-block;
-  padding: 15px;
-  max-width: 100%;
+  width: 33%;
 }
 
-footer .mogo-footer .images .image-wrapper .first-image {
-  background-image: url("../../assets/first-block-images/pexels-pixabay-39578.jpg");
-  background-size: 100% 100%;
-  width: 330px;
-  height: 230px;
-  max-width: 100%;
-  cursor: pointer;
+footer .mogo-footer .center-content {
+  display: inline-block;
+  width: 33%;
 }
 
-footer .mogo-footer .images .image-wrapper .second-image {
-  background-image: url("../../assets/first-block-images/pexels-garrett-morrow-610945.jpg");
-  background-size: 100% 100%;
-  width: 330px;
-  height: 230px;
-  max-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  cursor: pointer;
-}
-
-footer .mogo-footer .images .image-wrapper .third-image {
-  background-image: url("../../assets/first-block-images/pexels-reezky-pradata-441963.jpg");
-  background-size: 100% 100%;
-  width: 330px;
-  height: 230px;
-  max-width: 100%;
-  cursor: pointer;
+footer .mogo-footer .right-content {
+  display: inline-block;
+  width: 33%;
 }
 
 @media only screen and (max-width: 1450px) {
