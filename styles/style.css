@@ -129,6 +129,28 @@ span {
   float: left;
 }
 
+.overlay-3 {
+  visibility: hidden;
+  text-align: center;
+  height: 100%;
+}
+
+.overlay-3 .abc {
+  margin: 0;
+  position: absolute;
+  margin-top: 30%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: 50%;
+}
+
+.overlay-3 .abc p {
+  text-transform: uppercase;
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../../assets/header-image/pexels-radovan-zierik-5138164.jpg");
   background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../../assets/header-image/pexels-radovan-zierik-5138164.jpg");
@@ -854,6 +876,17 @@ main section .photos .first-photos-block .images-block-1 .image-1 {
   background-position: 100% 90%;
   height: 410px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .first-photos-block .images-block-1 .image-1:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 26.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 26.jpg");
+}
+
+main section .photos .first-photos-block .images-block-1 .image-1:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .first-photos-block .images-block-1 .image-2 {
@@ -862,6 +895,17 @@ main section .photos .first-photos-block .images-block-1 .image-2 {
   background-position: 100% 90%;
   height: 410px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .first-photos-block .images-block-1 .image-2:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 35.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 35.jpg");
+}
+
+main section .photos .first-photos-block .images-block-1 .image-2:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .first-photos-block .images-block-2 {
@@ -875,6 +919,17 @@ main section .photos .first-photos-block .images-block-2 .image-1 {
   background-position: 100% 90%;
   height: 410px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .first-photos-block .images-block-2 .image-1:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 33.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 33.jpg");
+}
+
+main section .photos .first-photos-block .images-block-2 .image-1:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .first-photos-block .images-block-2 .image-2 {
@@ -884,6 +939,17 @@ main section .photos .first-photos-block .images-block-2 .image-2 {
   height: 410px;
   background-repeat: no-repeat;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .first-photos-block .images-block-2 .image-2:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 29.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 29.jpg");
+}
+
+main section .photos .first-photos-block .images-block-2 .image-2:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .second-photos-block {
@@ -895,6 +961,7 @@ main section .photos .second-photos-block {
 main section .photos .second-photos-block .center-image {
   display: inline-block;
   width: 50%;
+  vertical-align: top;
 }
 
 main section .photos .second-photos-block .center-image .image {
@@ -903,6 +970,17 @@ main section .photos .second-photos-block .center-image .image {
   background-position: 48% 100%;
   height: 820px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .second-photos-block .center-image .image:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 34.jpg") !important;
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 34.jpg") !important;
+}
+
+main section .photos .second-photos-block .center-image .image:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .second-photos-block .images-block {
@@ -916,6 +994,17 @@ main section .photos .second-photos-block .images-block .image-1 {
   background-position: 100% 5%;
   height: 410px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .second-photos-block .images-block .image-1:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 31.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 31.jpg");
+}
+
+main section .photos .second-photos-block .images-block .image-1:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .photos .second-photos-block .images-block .image-2 {
@@ -924,6 +1013,17 @@ main section .photos .second-photos-block .images-block .image-2 {
   background-position: 100% 5%;
   height: 410px;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+main section .photos .second-photos-block .images-block .image-2:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 208, 107, 0.84)), to(rgba(255, 117, 110, 0.84))), url("../assets/some-of-work-images/Layer 32.jpg");
+  background-image: linear-gradient(0deg, rgba(255, 208, 107, 0.84) 0%, rgba(255, 117, 110, 0.84) 100%), url("../assets/some-of-work-images/Layer 32.jpg");
+}
+
+main section .photos .second-photos-block .images-block .image-2:hover .overlay-3 {
+  visibility: visible;
 }
 
 main section .carousele-block-2 {

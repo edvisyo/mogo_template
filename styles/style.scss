@@ -131,6 +131,25 @@ span {
     }
 }
 
+.overlay-3 {
+    visibility: hidden;
+    text-align: center;
+    height: 100%;
+    .abc {
+        margin: 0;
+        position: absolute;
+        margin-top: 30%;
+        transform: translate(50%, 50%);
+        width: 50%;
+        p {
+            text-transform: uppercase;
+            color: $whiteColor !important;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}
+
 header {
     background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../../assets/header-image/pexels-radovan-zierik-5138164.jpg');
     background-size: 100% 100%;
@@ -743,6 +762,14 @@ main {
                         height: 410px;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .image-1:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 26.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
                     }
                     .image-2 {
                         background-image: url('../assets/some-of-work-images/Layer 35.jpg');
@@ -751,6 +778,14 @@ main {
                         height: 410px;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .image-2:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 35.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
                     }
                 }
                 .images-block-2 {
@@ -763,6 +798,14 @@ main {
                         height: 410px;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .image-1:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 33.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
                     }
                     .image-2 {
                         background-image: url('../assets/some-of-work-images/Layer 29.jpg');
@@ -772,6 +815,14 @@ main {
                         background-repeat: no-repeat;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .image-2:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 29.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
                     }
                 }
             }
@@ -782,6 +833,7 @@ main {
                 .center-image {
                     display: inline-block;
                     width: 50%;
+                    vertical-align: top;
                    .image {
                     background-image: url('../assets/some-of-work-images/Layer 34.jpg');
                     background-size: cover;
@@ -789,7 +841,15 @@ main {
                     height: 820px;
                     // max-width: 476px;
                     width: 100%;
+                    cursor: pointer;
+                    position: relative;
                    } 
+                   .image:hover {
+                    background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 34.jpg') !important;
+                    .overlay-3 {
+                        visibility: visible;
+                    }
+                }
                 }
                 .images-block {
                     display: inline-block;
@@ -801,7 +861,16 @@ main {
                         height: 410px;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
                     }
+                    .image-1:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 31.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
+                    }
+                    
                     .image-2 {
                         background-image: url('../assets/some-of-work-images/Layer 32.jpg');
                         background-size: cover;
@@ -809,6 +878,14 @@ main {
                         height: 410px;
                         // max-width: 476px;
                         width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .image-2:hover {
+                        background-image: linear-gradient(0deg, rgba(255,208,107,0.84) 0%, rgba(255,117,110,0.84) 100%), url('../assets/some-of-work-images/Layer 32.jpg');
+                        .overlay-3 {
+                            visibility: visible;
+                        }
                     }
                 }
             }
