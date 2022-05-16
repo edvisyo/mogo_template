@@ -406,7 +406,8 @@ main section .statistics-block .stats {
   color: #ffffff;
   border-left: 1px solid #ffffff;
   padding: 58px 28px 58px 28px;
-  width: 19.7%;
+  max-width: 276px;
+  width: 100%;
 }
 
 main section .statistics-block .stats .number {
@@ -839,6 +840,7 @@ main section {
 main section .our-work-block {
   padding-top: 75px;
   text-align: center;
+  margin-bottom: 75px;
 }
 
 main section .our-work-block span {
@@ -1154,7 +1156,8 @@ main section .what-people-say-block::before {
 
 main section .latest-blog-block {
   text-align: center;
-  font-size: 0;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 main section .latest-blog-block span {
@@ -1359,6 +1362,18 @@ footer .mogo-footer p {
   .container {
     width: 95%;
   }
+  .statistics-block .stats:nth-child(4) {
+    border-right: 1px solid #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1189px) {
+  .statistics-block .stats:nth-child(3) {
+    border-right: 1px solid #ffffff;
+  }
+  .statistics-block .stats:nth-child(4) {
+    border-right: none;
+  }
 }
 
 @media only screen and (max-width: 1062px) {
@@ -1367,6 +1382,18 @@ footer .mogo-footer p {
   }
   .lower-content {
     width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 894px) {
+  .statistics-block .stats:nth-child(2) {
+    border-right: 1px solid #ffffff;
+  }
+  .statistics-block .stats:nth-child(3) {
+    border-right: none;
+  }
+  .statistics-block .stats:nth-child(4) {
+    border-right: 1px solid #ffffff;
   }
 }
 
@@ -1406,6 +1433,18 @@ footer .mogo-footer p {
   }
   .lower-content .content-wrapper .img {
     margin-left: 30px;
+  }
+  .amazing-services-block {
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  .statistics-block .stats {
+    border: 1px solid #ffffff;
+  }
+  .statistics-block .stats:nth-child(3) {
+    border-right: 1px solid #ffffff;
   }
 }
 
