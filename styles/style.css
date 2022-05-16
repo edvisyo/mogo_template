@@ -833,88 +833,97 @@ main section .our-work-block p {
 
 main section .photos {
   font-size: 0;
+  width: 100%;
+  display: block;
 }
 
 main section .photos .first-photos-block {
   font-size: 0;
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .first-photos-block .images-block-1 {
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .first-photos-block .images-block-1 .image-1 {
   background-image: url("../assets/some-of-work-images/Layer 26.jpg");
   background-size: cover;
   background-position: 100% 90%;
-  height: 200px;
-  width: 250px;
+  height: 410px;
+  width: 100%;
 }
 
 main section .photos .first-photos-block .images-block-1 .image-2 {
   background-image: url("../assets/some-of-work-images/Layer 35.jpg");
   background-size: cover;
   background-position: 100% 90%;
-  height: 200px;
-  width: 250px;
+  height: 410px;
+  width: 100%;
 }
 
 main section .photos .first-photos-block .images-block-2 {
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .first-photos-block .images-block-2 .image-1 {
   background-image: url("../assets/some-of-work-images/Layer 33.jpg");
   background-size: cover;
   background-position: 100% 90%;
-  height: 200px;
-  width: 250px;
+  height: 410px;
+  width: 100%;
 }
 
 main section .photos .first-photos-block .images-block-2 .image-2 {
   background-image: url("../assets/some-of-work-images/Layer 29.jpg");
   background-size: cover;
   background-position: 100% 90%;
-  height: 200px;
-  width: 250px;
+  height: 410px;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 main section .photos .second-photos-block {
   font-size: 0;
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .second-photos-block .center-image {
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .second-photos-block .center-image .image {
   background-image: url("../assets/some-of-work-images/Layer 34.jpg");
   background-size: cover;
-  background-position: 50% 100%;
-  height: 400px;
-  width: 250px;
+  background-position: 48% 100%;
+  height: 820px;
+  width: 100%;
 }
 
 main section .photos .second-photos-block .images-block {
   display: inline-block;
+  width: 50%;
 }
 
 main section .photos .second-photos-block .images-block .image-1 {
   background-image: url("../assets/some-of-work-images/Layer 31.jpg");
   background-size: cover;
-  background-position: 100% 10%;
-  height: 200px;
-  width: 250px;
+  background-position: 100% 5%;
+  height: 410px;
+  width: 100%;
 }
 
 main section .photos .second-photos-block .images-block .image-2 {
   background-image: url("../assets/some-of-work-images/Layer 32.jpg");
   background-size: cover;
-  background-position: 100% 10%;
-  height: 200px;
-  width: 250px;
+  background-position: 100% 5%;
+  height: 410px;
+  width: 100%;
 }
 
 main section .carousele-block-2 {
