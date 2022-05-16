@@ -831,6 +831,92 @@ main section .our-work-block p {
   color: #adb5bd;
 }
 
+main section .photos {
+  font-size: 0;
+}
+
+main section .photos .first-photos-block {
+  font-size: 0;
+  display: inline-block;
+}
+
+main section .photos .first-photos-block .images-block-1 {
+  display: inline-block;
+}
+
+main section .photos .first-photos-block .images-block-1 .image-1 {
+  background-image: url("../assets/some-of-work-images/Layer 26.jpg");
+  background-size: cover;
+  background-position: 100% 90%;
+  height: 200px;
+  width: 250px;
+}
+
+main section .photos .first-photos-block .images-block-1 .image-2 {
+  background-image: url("../assets/some-of-work-images/Layer 35.jpg");
+  background-size: cover;
+  background-position: 100% 90%;
+  height: 200px;
+  width: 250px;
+}
+
+main section .photos .first-photos-block .images-block-2 {
+  display: inline-block;
+}
+
+main section .photos .first-photos-block .images-block-2 .image-1 {
+  background-image: url("../assets/some-of-work-images/Layer 33.jpg");
+  background-size: cover;
+  background-position: 100% 90%;
+  height: 200px;
+  width: 250px;
+}
+
+main section .photos .first-photos-block .images-block-2 .image-2 {
+  background-image: url("../assets/some-of-work-images/Layer 29.jpg");
+  background-size: cover;
+  background-position: 100% 90%;
+  height: 200px;
+  width: 250px;
+}
+
+main section .photos .second-photos-block {
+  font-size: 0;
+  display: inline-block;
+}
+
+main section .photos .second-photos-block .center-image {
+  display: inline-block;
+}
+
+main section .photos .second-photos-block .center-image .image {
+  background-image: url("../assets/some-of-work-images/Layer 34.jpg");
+  background-size: cover;
+  background-position: 50% 100%;
+  height: 400px;
+  width: 250px;
+}
+
+main section .photos .second-photos-block .images-block {
+  display: inline-block;
+}
+
+main section .photos .second-photos-block .images-block .image-1 {
+  background-image: url("../assets/some-of-work-images/Layer 31.jpg");
+  background-size: cover;
+  background-position: 100% 10%;
+  height: 200px;
+  width: 250px;
+}
+
+main section .photos .second-photos-block .images-block .image-2 {
+  background-image: url("../assets/some-of-work-images/Layer 32.jpg");
+  background-size: cover;
+  background-position: 100% 10%;
+  height: 200px;
+  width: 250px;
+}
+
 main section .carousele-block-2 {
   display: block;
   margin-bottom: 105px;
