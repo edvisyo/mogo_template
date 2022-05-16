@@ -135,20 +135,26 @@ span {
   height: 100%;
 }
 
-.overlay-3 .abc {
+.overlay-3 .overlay-content {
   margin: 0;
+  font-size: 1rem;
   position: absolute;
-  margin-top: 30%;
+  top: 25%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
   width: 50%;
 }
 
-.overlay-3 .abc p {
+.overlay-3 .overlay-content img {
+  margin-bottom: 15px;
+}
+
+.overlay-3 .overlay-content p {
   text-transform: uppercase;
   color: #ffffff !important;
   font-weight: bold;
-  font-size: 1rem;
+  margin-bottom: 15px;
+  font-size: 1vw;
 }
 
 header {

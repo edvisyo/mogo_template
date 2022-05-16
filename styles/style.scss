@@ -135,17 +135,22 @@ span {
     visibility: hidden;
     text-align: center;
     height: 100%;
-    .abc {
+    .overlay-content {
         margin: 0;
+        font-size: 1rem;
         position: absolute;
-        margin-top: 30%;
+        top: 25%;
         transform: translate(50%, 50%);
         width: 50%;
+        img {
+            margin-bottom: 15px;
+        }
         p {
             text-transform: uppercase;
             color: $whiteColor !important;
             font-weight: bold;
-            font-size: 1rem;
+            margin-bottom: 15px;
+            font-size: 1vw;
         }
     }
 }
