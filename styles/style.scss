@@ -98,36 +98,41 @@ span {
 
 .overlay-with-social {
     visibility: hidden;
-    img {
-        margin-top: 170px;
-    }
-    img:nth-child(1) {
-        background-color: rgba(255,117,110,0.84);
-        padding: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        float: left;
-        margin-left: 65px;
-    }
-    img:nth-child(2) {
-        background-color: rgba(255,208,107,0.84);
-        padding: 10px;
-        padding-bottom: 14px;
-        float: left;
-    }
-    img:nth-child(3) {
-        background-color: rgba(255,208,107,0.84);
-        padding: 10px;
-        float: left;
-        border-left: 1px solid rgba(255,117,110,0.84);
-        border-right: 1px solid rgba(255,117,110,0.84);
-        padding-left: 13px;
-        padding-right: 13px;
-    }
-    img:nth-child(4) {
-        background-color: rgba(255,208,107,0.84);
-        padding: 10px;
-        float: left;
+    position: relative;
+    height: 100%;
+    .social-links {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+        img:nth-child(1) {
+            background-color: rgba(255,117,110,0.84);
+            padding: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            float: left;
+        }
+        img:nth-child(2) {
+            background-color: rgba(255,208,107,0.84);
+            padding: 10px;
+            padding-bottom: 14px;
+            float: left;
+        }
+        img:nth-child(3) {
+            background-color: rgba(255,208,107,0.84);
+            padding: 10px;
+            float: left;
+            border-left: 1px solid rgba(255,117,110,0.84);
+            border-right: 1px solid rgba(255,117,110,0.84);
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+        img:nth-child(4) {
+            background-color: rgba(255,208,107,0.84);
+            padding: 10px;
+            float: left;
+        }
     }
 }
 
@@ -544,11 +549,72 @@ main {
                             max-width: 555px;
                             width: 100%;
                             overflow-y: scroll;
-                            height: 195px;
+                            height: 185px;
                             p {
                                 width: 100%;
                                 padding: 13px;
                                 font-style: italic;
+                            }
+                        }
+                    }
+                }
+                .dropdown2 {
+                    max-width: 570px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    .dropdown-wrapper {
+                        border: 1px solid $greyColor;
+                        .dropdown-header {
+                            border-bottom: 1px solid $greyColor;
+                            height: 53px;
+                            .dropdown-image {
+                                float: left;
+                                margin-left: 15px;
+                                margin-top: 10px;
+                            }
+                            .dropdown-heading {
+                                display: inline-block;
+                                margin-top: 19px;
+                            }
+                            .dropdown-button {
+                                float: right;
+                                margin-right: 15px;
+                                margin-top: 18px;
+                                button {
+                                    border: none;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dropdown3 {
+                    max-width: 570px;
+                    .dropdown-wrapper {
+                        border: 1px solid $greyColor;
+                        .dropdown-header {
+                            border-bottom: 1px solid $greyColor;
+                            height: 53px;
+                            .dropdown-image {
+                                float: left;
+                                margin-left: 15px;
+                                margin-top: 10px;
+                            }
+                            .dropdown-heading {
+                                display: inline-block;
+                                margin-top: 19px;
+                            }
+                            .dropdown-button {
+                                float: right;
+                                margin-right: 15px;
+                                margin-top: 18px;
+                                button {
+                                    border: none;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
                             }
                         }
                     }

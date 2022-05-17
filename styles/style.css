@@ -91,29 +91,35 @@ span {
 
 .overlay-with-social {
   visibility: hidden;
+  position: relative;
+  height: 100%;
 }
 
-.overlay-with-social img {
-  margin-top: 170px;
+.overlay-with-social .social-links {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
 }
 
-.overlay-with-social img:nth-child(1) {
+.overlay-with-social .social-links img:nth-child(1) {
   background-color: rgba(255, 117, 110, 0.84);
   padding: 10px;
   padding-left: 16px;
   padding-right: 16px;
   float: left;
-  margin-left: 65px;
 }
 
-.overlay-with-social img:nth-child(2) {
+.overlay-with-social .social-links img:nth-child(2) {
   background-color: rgba(255, 208, 107, 0.84);
   padding: 10px;
   padding-bottom: 14px;
   float: left;
 }
 
-.overlay-with-social img:nth-child(3) {
+.overlay-with-social .social-links img:nth-child(3) {
   background-color: rgba(255, 208, 107, 0.84);
   padding: 10px;
   float: left;
@@ -123,7 +129,7 @@ span {
   padding-right: 13px;
 }
 
-.overlay-with-social img:nth-child(4) {
+.overlay-with-social .social-links img:nth-child(4) {
   background-color: rgba(255, 208, 107, 0.84);
   padding: 10px;
   float: left;
@@ -622,13 +628,87 @@ main section .service-block .dropdowns .dropdown .dropdown-wrapper .dropdown-con
   max-width: 555px;
   width: 100%;
   overflow-y: scroll;
-  height: 195px;
+  height: 185px;
 }
 
 main section .service-block .dropdowns .dropdown .dropdown-wrapper .dropdown-content p {
   width: 100%;
   padding: 13px;
   font-style: italic;
+}
+
+main section .service-block .dropdowns .dropdown2 {
+  max-width: 570px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper {
+  border: 1px solid #adb5bd;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper .dropdown-header {
+  border-bottom: 1px solid #adb5bd;
+  height: 53px;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper .dropdown-header .dropdown-image {
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper .dropdown-header .dropdown-heading {
+  display: inline-block;
+  margin-top: 19px;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper .dropdown-header .dropdown-button {
+  float: right;
+  margin-right: 15px;
+  margin-top: 18px;
+}
+
+main section .service-block .dropdowns .dropdown2 .dropdown-wrapper .dropdown-header .dropdown-button button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+main section .service-block .dropdowns .dropdown3 {
+  max-width: 570px;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper {
+  border: 1px solid #adb5bd;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper .dropdown-header {
+  border-bottom: 1px solid #adb5bd;
+  height: 53px;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper .dropdown-header .dropdown-image {
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper .dropdown-header .dropdown-heading {
+  display: inline-block;
+  margin-top: 19px;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper .dropdown-header .dropdown-button {
+  float: right;
+  margin-right: 15px;
+  margin-top: 18px;
+}
+
+main section .service-block .dropdowns .dropdown3 .dropdown-wrapper .dropdown-header .dropdown-button button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 main section .service-block .dropdowns ::-webkit-scrollbar {
