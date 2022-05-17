@@ -1355,10 +1355,6 @@ main section .map-block::before {
   position: absolute;
 }
 
-footer {
-  font-size: 1rem;
-}
-
 footer .mogo-footer {
   margin-top: 150px;
   font-size: 0;
@@ -1366,10 +1362,10 @@ footer .mogo-footer {
 
 footer .mogo-footer .left-content {
   display: inline-block;
-  width: 33%;
-  margin: 0 auto;
+  width: 30%;
   max-width: 100%;
   vertical-align: top;
+  font-size: 1rem;
 }
 
 footer .mogo-footer .left-content h2 {
@@ -1379,7 +1375,10 @@ footer .mogo-footer .left-content h2 {
 
 footer .mogo-footer .left-content p {
   margin-bottom: 30px;
-  font-size: 1rem;
+}
+
+footer .mogo-footer .left-content form {
+  font-size: 0;
 }
 
 footer .mogo-footer .left-content form input {
@@ -1418,10 +1417,10 @@ footer .mogo-footer .left-content form button {
 
 footer .mogo-footer .center-content {
   display: inline-block;
-  width: 33%;
-  margin: 0 auto;
+  width: 30%;
   vertical-align: top;
   font-size: 1rem;
+  margin-left: 10%;
 }
 
 footer .mogo-footer .center-content h3 {
@@ -1431,19 +1430,39 @@ footer .mogo-footer .center-content h3 {
 footer .mogo-footer .center-content .blog .text {
   display: inline-block;
   vertical-align: top;
-  width: 60%;
+  width: 70%;
+  text-align: left;
+}
+
+footer .mogo-footer .center-content .blog:nth-child(3) {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 footer .mogo-footer .right-content {
+  text-align: right;
   display: inline-block;
-  width: 33%;
-  margin: 0 auto;
+  width: 30%;
   vertical-align: top;
   font-size: 1rem;
 }
 
-footer .mogo-footer p {
+footer .mogo-footer .right-content h2 {
+  margin-right: 166px;
+  margin-bottom: 35px;
+}
+
+footer .mogo-footer .ending-text {
   font-size: 1rem;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+footer .mogo-footer .ending-text span {
+  text-transform: capitalize;
+  color: #ff4d6d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1475,6 +1494,29 @@ footer .mogo-footer p {
   }
   .lower-content {
     width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1103px) {
+  footer {
+    font-size: 1rem;
+  }
+  footer .mogo-footer {
+    margin-top: 150px;
+  }
+  footer .mogo-footer .left-content {
+    display: inline-block;
+    width: 49%;
+  }
+  footer .mogo-footer .center-content {
+    display: inline-block;
+    width: 39%;
+  }
+  footer .mogo-footer .right-content {
+    width: 100%;
+    vertical-align: top;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
