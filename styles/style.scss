@@ -481,51 +481,57 @@ main {
     section {
         .service-block {
             display: block;
-            text-align: center;
-            span {
-                font-size: $spanFontSize;
-            }
-            h1 {
-                margin-top: 15px;
-            }
-            p {
-                display: block;
-                width: 70%;
-                margin: 0 auto;
-                color: $greyColor;
-                padding-bottom: 95px;
+            .block-heading {
+                text-align: center;
+                span {
+                    font-size: $spanFontSize;
+                }
+                h1 {
+                    margin-top: 15px;
+                }
+                p {
+                    display: block;
+                    width: 70%;
+                    margin: 0 auto;
+                    color: $greyColor;
+                    padding-bottom: 95px;
+                }
             }
             .img {
                 float: left;
+                margin-bottom: 35px;
                 img {
                     width: 100%;
-                    max-width: 490px;
                     height: 380px;
                 }
             }
             .dropdowns {
                 float: right;
+                vertical-align: top;
+                text-align: center;
                 margin-bottom: 95px !important;
+                max-width: 570px;
+                width: 100%;
                 .dropdown {
-                    width: 490px;
+                    max-width: 570px;
                     .dropdown-wrapper {
                         border: 1px solid $greyColor;
                         .dropdown-header {
                             border-bottom: 1px solid $greyColor;
-                            padding-top: 10px;
-                            padding-bottom: 6px;
+                            height: 53px;
                             .dropdown-image {
-                                display: inline-block;
-                                vertical-align: middle;
+                                float: left;
+                                margin-left: 15px;
+                                margin-top: 10px;
                             }
                             .dropdown-heading {
                                 display: inline-block;
-                                margin-right: 145px;
-                                margin-left: 145px;
+                                margin-top: 19px;
                             }
                             .dropdown-button {
-                                display: inline-block;
-                                vertical-align: middle;
+                                float: right;
+                                margin-right: 15px;
+                                margin-top: 18px;
                                 button {
                                     border: none;
                                     background: transparent;
@@ -535,7 +541,8 @@ main {
                         }
                         .dropdown-content {
                             text-align: left;
-                            width: 467px;
+                            max-width: 555px;
+                            width: 100%;
                             overflow-y: scroll;
                             height: 195px;
                             p {
@@ -1243,6 +1250,14 @@ footer {
             border-right: none;
         }
     }
+    .service-block {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        .img {
+            // max-width: 478px;
+        }
+    }    
 }
 
 @media only screen and (max-width: 1062px) {
@@ -1252,6 +1267,12 @@ footer {
     .lower-content {
         width: 100% !important;
     }
+    // .service-block {
+    //     display: block;
+    //     .img {
+    //         margin-bottom: 25px;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 894px) {
