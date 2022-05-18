@@ -274,79 +274,7 @@ header .header-bottom-content section .border-top {
   height: 2px;
   left: 0;
   top: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, red), color-stop(10%, white));
-  background: linear-gradient(to right, red 30%, white 10%);
-}
-
-header .header-bottom-content section .border-top p {
-  position: relative;
-  padding-top: 10px;
-}
-
-header .header-bottom-content section .border-top p:hover:before {
-  content: "-";
-  position: absolute;
-  top: -2px;
-  -webkit-animation-name: example;
-          animation-name: example;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
+  background: white;
 }
 
 main section {
@@ -502,63 +430,30 @@ main section .amazing-services-block .rectangle-red {
   margin-bottom: 60px;
 }
 
-main section .amazing-services-block .upper-content {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-}
-
-main section .amazing-services-block .upper-content .content-wrapper {
+main section .amazing-services-block .content-wrapper {
   display: inline-block;
   width: 33%;
   text-align: left;
-  height: 150px;
+  margin-bottom: 75px;
+  vertical-align: top;
 }
 
-main section .amazing-services-block .upper-content .content-wrapper .img {
-  float: left;
-}
-
-main section .amazing-services-block .upper-content .content-wrapper .content {
-  float: right;
-  width: 85%;
-}
-
-main section .amazing-services-block .upper-content .content-wrapper .content h5 {
-  margin-bottom: 10px;
-}
-
-main section .amazing-services-block .upper-content .content-wrapper .content p {
-  color: #adb5bd;
-}
-
-main section .amazing-services-block .lower-content {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-}
-
-main section .amazing-services-block .lower-content .content-wrapper {
+main section .amazing-services-block .content-wrapper .img {
   display: inline-block;
-  width: 33%;
-  text-align: left;
-  height: 150px;
+  vertical-align: top;
+  margin-right: 25px;
 }
 
-main section .amazing-services-block .lower-content .content-wrapper .img {
-  float: left;
+main section .amazing-services-block .content-wrapper .content {
+  display: inline-block;
+  width: 80%;
 }
 
-main section .amazing-services-block .lower-content .content-wrapper .content {
-  float: right;
-  width: 85%;
-}
-
-main section .amazing-services-block .lower-content .content-wrapper .content h5 {
+main section .amazing-services-block .content-wrapper .content h5 {
   margin-bottom: 10px;
 }
 
-main section .amazing-services-block .lower-content .content-wrapper .content p {
+main section .amazing-services-block .content-wrapper .content p {
   color: #adb5bd;
 }
 
@@ -628,7 +523,7 @@ main section .service-block .img {
 
 main section .service-block .img img {
   width: 100%;
-  height: 380px;
+  max-height: 380px;
 }
 
 main section .service-block .dropdowns {
@@ -1582,15 +1477,6 @@ footer .mogo-footer .ending-text span {
   }
 }
 
-@media only screen and (max-width: 1062px) {
-  .upper-content {
-    width: 100% !important;
-  }
-  .lower-content {
-    width: 100% !important;
-  }
-}
-
 @media only screen and (max-width: 894px) {
   .statistics-block .stats:nth-child(2) {
     border-right: 1px solid #ffffff;
@@ -1604,17 +1490,11 @@ footer .mogo-footer .ending-text span {
 }
 
 @media only screen and (max-width: 852px) {
-  .upper-content {
-    width: 100% !important;
+  .amazing-services-block .heading {
+    text-align: center !important;
   }
-  .upper-content .content-wrapper {
-    width: 32% !important;
-  }
-  .lower-content {
-    width: 100% !important;
-  }
-  .lower-content .content-wrapper {
-    width: 32% !important;
+  .amazing-services-block .content-wrapper {
+    width: 49% !important;
   }
 }
 
@@ -1646,11 +1526,41 @@ footer .mogo-footer .ending-text span {
 }
 
 @media only screen and (max-width: 632px) {
+  .statistics-block .container {
+    width: 100%;
+  }
   .statistics-block .stats {
-    border: 1px solid #ffffff;
+    max-width: 100% !important;
+  }
+  .statistics-block .stats:nth-child(1) {
+    border-left: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+  }
+  .statistics-block .stats:nth-child(2) {
+    border: none;
+    border-bottom: 1px solid #ffffff;
   }
   .statistics-block .stats:nth-child(3) {
-    border-right: 1px solid #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  .statistics-block .stats:nth-child(4) {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  .statistics-block .stats:nth-child(5) {
+    border-left: none;
+    border-right: none !important;
+  }
+  .amazing-services-block {
+    text-align: justify !important;
+  }
+  .amazing-services-block .heading {
+    text-align: center !important;
+  }
+  .amazing-services-block .content-wrapper {
+    width: 49% !important;
   }
   .photos .first-photos-block {
     width: 100% !important;
@@ -1666,6 +1576,9 @@ footer .mogo-footer .ending-text span {
 @media only screen and (max-width: 511px) {
   .upper-content .content-wrapper .img {
     margin-left: 10px;
+  }
+  .upper-content .content-wrapper:nth-child(3) {
+    width: 50%;
   }
   .lower-content .content-wrapper .img {
     margin-left: 10px;
