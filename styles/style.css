@@ -1137,14 +1137,16 @@ main section .carousele-block-2 .icon-right {
 
 main section .what-people-say-block {
   position: relative;
+  font-size: 0;
 }
 
 main section .what-people-say-block .content-wrapper {
   display: block;
   position: relative;
   padding-top: 75px;
-  width: 90%;
   margin: 0 auto;
+  font-size: 1rem;
+  text-align: right;
 }
 
 main section .what-people-say-block .content-wrapper .heading {
@@ -1162,6 +1164,7 @@ main section .what-people-say-block .content-wrapper .heading h1 {
 main section .what-people-say-block .content-wrapper .person {
   display: inline-block;
   margin-bottom: 55px;
+  text-align: left;
   width: 49%;
 }
 
@@ -1180,7 +1183,7 @@ main section .what-people-say-block .content-wrapper .person .image img {
 
 main section .what-people-say-block .content-wrapper .person .context {
   display: inline-block;
-  width: 60%;
+  width: 50%;
   margin-left: 20px;
 }
 
