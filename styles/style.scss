@@ -1091,14 +1091,17 @@ main {
                         margin-top: 15px;
                     }
                 }
-                .block-wrapper {
-                    display: inline-block;
-                    overflow: hidden;
-                    width: 49%;
+                // .block-wrapper {
+                //     // display: inline-block;
+                //     overflow: hidden;
+                //     width: 49%;
                     // margin: 0 auto; 
                     .person {
                         // text-align: center;
                         // width: 80%;
+                        display: inline-block;
+                        margin-bottom: 55px;
+                        width: 49%;
                         .image {
                             display: inline-block;
                             vertical-align: top;
@@ -1112,7 +1115,8 @@ main {
                         }
                         .context {
                             display: inline-block;
-                            width: 60%; 
+                            width: 60%;
+                            margin-left: 20px; 
                             h5 {
 
                             }
@@ -1129,7 +1133,7 @@ main {
                             }
                         }
                     }
-                }
+                // }
             }
         }
         .what-people-say-block::before {
@@ -1567,6 +1571,19 @@ footer {
         .carousele-block {
             .content {
                 width: 50% !important;
+            }
+        }
+    }
+    section {
+        .what-people-say-block {
+            .content-wrapper {
+                .person {
+                    width: 100% !important;
+                    text-align: center !important;
+                    .context {
+                        text-align: left;
+                    }
+                }
             }
         }
     }

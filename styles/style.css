@@ -1159,18 +1159,18 @@ main section .what-people-say-block .content-wrapper .heading h1 {
   margin-top: 15px;
 }
 
-main section .what-people-say-block .content-wrapper .block-wrapper {
+main section .what-people-say-block .content-wrapper .person {
   display: inline-block;
-  overflow: hidden;
+  margin-bottom: 55px;
   width: 49%;
 }
 
-main section .what-people-say-block .content-wrapper .block-wrapper .person .image {
+main section .what-people-say-block .content-wrapper .person .image {
   display: inline-block;
   vertical-align: top;
 }
 
-main section .what-people-say-block .content-wrapper .block-wrapper .person .image img {
+main section .what-people-say-block .content-wrapper .person .image img {
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -1178,12 +1178,13 @@ main section .what-people-say-block .content-wrapper .block-wrapper .person .ima
      object-fit: cover;
 }
 
-main section .what-people-say-block .content-wrapper .block-wrapper .person .context {
+main section .what-people-say-block .content-wrapper .person .context {
   display: inline-block;
   width: 60%;
+  margin-left: 20px;
 }
 
-main section .what-people-say-block .content-wrapper .block-wrapper .person .context .rectangle-red {
+main section .what-people-say-block .content-wrapper .person .context .rectangle-red {
   margin-left: 0;
   margin-top: 10px !important;
   margin-bottom: 10px !important;
@@ -1578,6 +1579,13 @@ footer .mogo-footer .ending-text span {
 @media only screen and (max-width: 758px) {
   section .carousele-block .content {
     width: 50% !important;
+  }
+  section .what-people-say-block .content-wrapper .person {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  section .what-people-say-block .content-wrapper .person .context {
+    text-align: left;
   }
 }
 
