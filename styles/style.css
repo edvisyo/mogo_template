@@ -1091,16 +1091,19 @@ main section .carousele-block-2 .image {
 }
 
 main section .carousele-block-2 .image img {
-  background-size: 100% 100%;
-  max-width: 160px;
-  height: 160px;
+  max-width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+
+main section .carousele-block-2 .icon-right2 {
+  display: none;
 }
 
 main section .carousele-block-2 .content {
   display: inline-block;
   vertical-align: middle;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -1426,11 +1429,20 @@ footer .mogo-footer .ending-text span {
   section .carousele-block .content {
     width: 75% !important;
   }
+  section .carousele-block-2 .content {
+    width: 70% !important;
+  }
 }
 
 @media only screen and (max-width: 1353px) {
   section .carousele-block .content {
     width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 1235px) {
+  section .carousele-block-2 .content {
+    width: 65% !important;
   }
 }
 
@@ -1495,6 +1507,12 @@ footer .mogo-footer .ending-text span {
   }
 }
 
+@media only screen and (max-width: 1061px) {
+  section .carousele-block-2 .content {
+    width: 55% !important;
+  }
+}
+
 @media only screen and (max-width: 971px) {
   section .carousele-block .content {
     width: 60% !important;
@@ -1525,6 +1543,12 @@ footer .mogo-footer .ending-text span {
   }
 }
 
+@media only screen and (max-width: 805px) {
+  section .carousele-block-2 .content {
+    width: 50% !important;
+  }
+}
+
 @media only screen and (max-width: 758px) {
   section .carousele-block .content {
     width: 50% !important;
@@ -1547,11 +1571,20 @@ footer .mogo-footer .ending-text span {
   .amazing-services-block {
     margin-bottom: 75px;
   }
+  section .carousele-block-2 .content {
+    width: 45% !important;
+  }
 }
 
 @media only screen and (max-width: 721px) {
   section .carousele-block .content {
     width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 697px) {
+  section .carousele-block-2 .content {
+    width: 39% !important;
   }
 }
 
@@ -1603,6 +1636,9 @@ footer .mogo-footer .ending-text span {
     float: left;
     margin-top: 55px;
   }
+  section .carousele-block .image {
+    margin-bottom: 40px;
+  }
   section .carousele-block .content {
     width: 100% !important;
     text-align: left;
@@ -1623,6 +1659,36 @@ footer .mogo-footer .ending-text span {
   }
   .photos .first-photos-block .images-block-2 .image-1 {
     background-position: 0 0 !important;
+  }
+  section .carousele-block-2 {
+    text-align: center !important;
+  }
+  section .carousele-block-2 .container {
+    width: 90%;
+    margin: 0 auto !important;
+  }
+  section .carousele-block-2 .icon-left {
+    float: left;
+    margin-top: 55px;
+  }
+  section .carousele-block-2 .image {
+    margin-bottom: 40px;
+  }
+  section .carousele-block-2 .image img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  section .carousele-block-2 .content {
+    width: 100% !important;
+    text-align: left;
+  }
+  section .carousele-block-2 .icon-right2 {
+    display: block !important;
+    margin-top: 55px;
+    float: right;
+  }
+  section .carousele-block-2 .icon-right {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -727,8 +727,6 @@ main {
                 display: inline-block;
                 vertical-align: middle;
                 width: 77%;
-                // max-width: 100%;
-                // margin: 0 auto;
                 .author-name {
                     margin-top: 15px;
                     .rectangle-red {
@@ -748,7 +746,6 @@ main {
                 display: inline-block;
                 vertical-align: middle;
                 margin-left: 50px;
-                // float: right;
             }
         }
     }
@@ -990,7 +987,6 @@ main {
                         background-size: cover;
                         background-position: 100% 5%;
                         height: 410px;
-                        // max-width: 476px;
                         width: 100%;
                         cursor: pointer;
                         position: relative;
@@ -1007,7 +1003,6 @@ main {
                         background-size: cover;
                         background-position: 100% 5%;
                         height: 410px;
-                        // max-width: 476px;
                         width: 100%;
                         cursor: pointer;
                         position: relative;
@@ -1026,8 +1021,6 @@ main {
     section {
         .carousele-block-2 {
             display: block;
-            // padding-top: 50px;
-            // padding-bottom: 50px;
             margin-bottom: 105px;
             .icon-left {
                 display: inline-block;
@@ -1039,16 +1032,18 @@ main {
                 vertical-align: middle;
                 margin-right: 50px;
                 img {
-                    background-size: 100% 100%;
-                    max-width: 160px;
-                    height: 160px;
+                    max-width: 150px;
+                    height: 150px;
                     border-radius: 50%;
                 }
+            }
+            .icon-right2 {
+                display: none;
             }
             .content {
                 display: inline-block;
                 vertical-align: middle;
-                width: 70%;
+                width: 75%;
                 margin: 0 auto;
                 .author-name {
                     margin-top: 15px;
@@ -1369,6 +1364,13 @@ footer {
             }
         }
     }
+    section {
+        .carousele-block-2 {
+            .content {
+                width: 70% !important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1353px) {
@@ -1381,8 +1383,14 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1280px) {
-
+@media only screen and (max-width: 1235px) {
+    section {
+        .carousele-block-2 {
+            .content {
+                width: 65% !important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1189px) {
@@ -1460,6 +1468,16 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1061px) {
+    section {
+        .carousele-block-2{
+            .content {
+                width: 55% !important;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 971px) {
     section {
         .carousele-block {
@@ -1502,6 +1520,16 @@ footer {
     }
 }
 
+@media only screen and (max-width: 805px) {
+    section {
+        .carousele-block-2{
+            .content {
+                width: 50% !important;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 758px) {
     section {
         .carousele-block {
@@ -1529,6 +1557,13 @@ footer {
     .amazing-services-block {
         margin-bottom: 75px;
     }
+    section {
+        .carousele-block-2{
+            .content {
+                width: 45% !important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 721px) {
@@ -1536,6 +1571,16 @@ footer {
         .carousele-block {
             .content {
                 width: 40% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    section {
+        .carousele-block-2 {
+            .content {
+                width: 39% !important;
             }
         }
     }
@@ -1591,6 +1636,9 @@ footer {
                 float: left;
                 margin-top: 55px;
             }
+            .image {
+                margin-bottom: 40px;
+            }
             .content {
                 width: 100% !important;
                 text-align: left;
@@ -1617,6 +1665,38 @@ footer {
                 .image-1 {
                     background-position: 0 0 !important;
                 }
+            }
+        }
+    }
+    section {
+        .carousele-block-2 {
+            text-align: center !important;
+            .container {
+                width: 90%;
+                margin: 0 auto !important;
+            }
+            .icon-left {
+                float: left;
+                margin-top: 55px;
+            }
+            .image {
+                margin-bottom: 40px;
+                img {
+                    width: 140px !important;
+                    height: 140px !important;
+                }
+            }
+            .content {
+                width: 100% !important;
+                text-align: left;
+            }
+            .icon-right2 {
+                display: block !important;
+                margin-top: 55px;
+                float: right;
+            }
+            .icon-right {
+                display: none !important;
             }
         }
     }
