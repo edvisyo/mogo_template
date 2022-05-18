@@ -705,6 +705,7 @@ main {
             padding-top: 50px;
             padding-bottom: 50px;
             margin-bottom: 65px;
+            text-align: center;
             .icon-left {
                 display: inline-block;
                 vertical-align: middle;
@@ -727,6 +728,7 @@ main {
                 display: inline-block;
                 vertical-align: middle;
                 width: 77%;
+                text-align: left;
                 .author-name {
                     margin-top: 15px;
                     .rectangle-red {
@@ -1021,7 +1023,9 @@ main {
     section {
         .carousele-block-2 {
             display: block;
+            margin-top: 105px;
             margin-bottom: 105px;
+            text-align: center;
             .icon-left {
                 display: inline-block;
                 vertical-align: middle;
@@ -1045,6 +1049,7 @@ main {
                 vertical-align: middle;
                 width: 75%;
                 margin: 0 auto;
+                text-align: left;
                 .author-name {
                     margin-top: 15px;
                     .rectangle-red {
@@ -1393,6 +1398,20 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1214px) {
+    section {
+        .service-block {
+            margin: 0 auto !important;
+            .img {
+                width: 49% !important;
+            }
+            .dropdowns {
+                width: 49% !important;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1189px) {
     .statistics-block {
         .stats:nth-child(3) {
@@ -1530,12 +1549,24 @@ footer {
     }
 }
 
+@media only screen and (max-width: 780px) {
+    section {
+        .service-block {
+            .img {
+                width: 100% !important;
+            }
+            .dropdowns {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 758px) {
     section {
         .carousele-block {
             .content {
                 width: 50% !important;
-                // width: 100% !important;
             }
         }
     }

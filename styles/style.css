@@ -701,6 +701,7 @@ main section .carousele-block {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 65px;
+  text-align: center;
 }
 
 main section .carousele-block .icon-left {
@@ -728,6 +729,7 @@ main section .carousele-block .content {
   display: inline-block;
   vertical-align: middle;
   width: 77%;
+  text-align: left;
 }
 
 main section .carousele-block .content .author-name {
@@ -1075,7 +1077,9 @@ main section .photos .second-photos-block .images-block .image-2:hover .overlay-
 
 main section .carousele-block-2 {
   display: block;
+  margin-top: 105px;
   margin-bottom: 105px;
+  text-align: center;
 }
 
 main section .carousele-block-2 .icon-left {
@@ -1105,6 +1109,7 @@ main section .carousele-block-2 .content {
   vertical-align: middle;
   width: 75%;
   margin: 0 auto;
+  text-align: left;
 }
 
 main section .carousele-block-2 .content .author-name {
@@ -1446,6 +1451,18 @@ footer .mogo-footer .ending-text span {
   }
 }
 
+@media only screen and (max-width: 1214px) {
+  section .service-block {
+    margin: 0 auto !important;
+  }
+  section .service-block .img {
+    width: 49% !important;
+  }
+  section .service-block .dropdowns {
+    width: 49% !important;
+  }
+}
+
 @media only screen and (max-width: 1189px) {
   .statistics-block .stats:nth-child(3) {
     border-right: 1px solid #ffffff;
@@ -1546,6 +1563,15 @@ footer .mogo-footer .ending-text span {
 @media only screen and (max-width: 805px) {
   section .carousele-block-2 .content {
     width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  section .service-block .img {
+    width: 100% !important;
+  }
+  section .service-block .dropdowns {
+    width: 100% !important;
   }
 }
 
