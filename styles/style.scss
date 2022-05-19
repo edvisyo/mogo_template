@@ -1278,12 +1278,16 @@ footer {
             p {
                 margin-bottom: 30px;
             }
+            .subscribers {
+                margin-bottom: 20px;
+            }
             form {
                 font-size: 0;
                 input {
                     display: inline-block;
                     height: 39px;
-                    max-width: 250px;
+                    // max-width: 290px;
+                    width: 56%;
                     border: 1px solid $greyColor;
                 }
                 ::placeholder {
@@ -1304,21 +1308,25 @@ footer {
         .center-content {
             display: inline-block;
             width: 30%;
-            // margin: 0 auto !important;
             vertical-align: top;
             font-size: 1rem;
             margin-left: 10%;
-            // margin-right: 5%;
-            // text-align: center;
+            margin-top: 5px;
             h3 {
-                margin-bottom: 35px;
+                margin-bottom: 40px;
             }
             .blog {
+                img {
+                    // margin-right: 5px;
+                }
                 .text {
                     display: inline-block; 
                     vertical-align: top; 
                     width: 70%;
                     text-align: left;
+                    p {
+                        text-transform: uppercase;
+                    }
                 }
             }
             .blog:nth-child(3) {
@@ -1384,6 +1392,17 @@ footer {
             }
         }
     }
+    footer {
+        .mogo-footer {
+            .center-content {
+                .blog {
+                    .text {
+                        width: 65% !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1353px) {
@@ -1401,6 +1420,20 @@ footer {
         .carousele-block-2 {
             .content {
                 width: 65% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1248px) {
+    footer {
+        .mogo-footer {
+            .center-content {
+                .blog {
+                    .text {
+                        width: 60% !important;
+                    }
+                }
             }
         }
     }
@@ -1545,6 +1578,17 @@ footer {
             }
         }
     }
+    footer {
+        .mogo-footer {
+            .center-content {
+                .blog {
+                    .text {
+                        width: 50% !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 805px) {
@@ -1616,6 +1660,31 @@ footer {
             }
         }
     }
+    footer {
+        .mogo-footer {
+            .left-content {
+                form {
+                    button {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    footer {
+        .mogo-footer {
+            .left-content {
+                form {
+                    input {
+                        width: 90%;;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 721px) {
@@ -1623,6 +1692,17 @@ footer {
         .carousele-block {
             .content {
                 width: 40% !important;
+            }
+        }
+    }
+    footer {
+        .mogo-footer {
+            .center-content {
+                .blog {
+                    .text {
+                        width: 40% !important;
+                    }
+                }
             }
         }
     }
@@ -1754,6 +1834,36 @@ footer {
     }
 }
 
-@media only screen and (max-width: 511px) {
+@media only screen and (max-width: 598px) {
+    footer {
+        .mogo-footer {
+            .center-content {
+                .blog {
+                    .text {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 370px) {
+    footer {
+        .mogo-footer {
+            .left-content {
+                form {
+                    input {
+                        width: 97% !important;
+                    }
+                    button {
+                        margin-top: 10px;
+                        width: 57% !important;
+                        font-size: 0.65rem;
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+    }
 }
