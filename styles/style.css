@@ -277,8 +277,20 @@ header .header-bottom-content section .border-top {
   height: 2px;
   left: 0;
   top: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, red), color-stop(10%, white));
-  background: linear-gradient(to right, red 30%, white 10%);
+  background: -webkit-gradient(linear, left top, left bottom, to(white));
+  background: linear-gradient(white 100%);
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+header .header-bottom-content section .border-top p {
+  padding-top: 10px;
+}
+
+header .header-bottom-content section .border-top:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, red), color-stop(10%, white));
+  background: linear-gradient(to right, red 100%, white 10%);
+  width: 100%;
 }
 
 main section {
@@ -1455,6 +1467,12 @@ footer .mogo-footer .ending-text span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@media only screen and (max-width: 1629px) {
+  section .unique-design-block::before {
+    height: 90.8% !important;
+  }
+}
+
 @media only screen and (max-width: 1450px) {
   .container {
     width: 95%;
@@ -1536,12 +1554,18 @@ footer .mogo-footer .ending-text span {
 }
 
 @media only screen and (max-width: 1130px) {
+  section .unique-design-block::before {
+    height: 92% !important;
+  }
   section .carousele-block .content {
     width: 65% !important;
   }
 }
 
 @media only screen and (max-width: 1103px) {
+  section .unique-design-block::before {
+    height: 92% !important;
+  }
   footer {
     font-size: 1rem;
   }
@@ -1682,6 +1706,12 @@ footer .mogo-footer .ending-text span {
   }
 }
 
+@media only screen and (max-width: 637px) {
+  section .unique-design-block::before {
+    height: 93% !important;
+  }
+}
+
 @media only screen and (max-width: 632px) {
   .statistics-block .container {
     width: 100%;
@@ -1718,6 +1748,9 @@ footer .mogo-footer .ending-text span {
   }
   .amazing-services-block .content-wrapper {
     width: 49% !important;
+  }
+  section .unique-design-block::before {
+    height: 93.5% !important;
   }
   section .carousele-block {
     text-align: center !important;
@@ -1795,9 +1828,24 @@ footer .mogo-footer .ending-text span {
   }
 }
 
+@media only screen and (max-width: 414px) {
+  section .unique-design-block::before {
+    height: 94.3% !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  section .unique-design-block::before {
+    height: 95% !important;
+  }
+}
+
 @media only screen and (max-width: 370px) {
   .header-bottom-content section {
     width: 23% !important;
+  }
+  section .unique-design-block::before {
+    height: 95% !important;
   }
   footer .mogo-footer .left-content form input {
     width: 97% !important;
