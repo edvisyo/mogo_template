@@ -1336,6 +1336,16 @@ footer {
                 margin-right: 166px;
                 margin-bottom: 35px;
             }
+            .link-to-more {
+                margin-right: 144px;
+                margin-top: 25px;
+                a:link {
+                    text-decoration: none;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: $greyColor;
+                    font-style: italic;
+                }
+            }
         }
         .ending-text {
             font-size: 1rem;
