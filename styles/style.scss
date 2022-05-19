@@ -204,7 +204,6 @@ header {
             font-size: calc(24px + 1vw);          
         }
         h1 {
-            // Blogas blokas ant telefonu!
             margin: 0 auto;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
@@ -229,24 +228,37 @@ header {
         }
     }
     .header-bottom-content {
-        text-align: center;
+        // text-align: center;
         display: block;
         padding-bottom: 15px;
         section {
             display: inline-block;
             color: $whiteColor;
-            width: 12vw;
+            width: 24%;
             text-align: left;
-            margin: 10px;
+            // margin: 10px;
+            padding: 15px;
+            margin: 0 auto;
             p {
                 text-transform: uppercase;
                 margin-top: 14vh;
+                font-size: 1rem;
+                padding-top: 15px;
+                width: 100%;
                 span {
                     font-weight: 1000;
                     font-size: 1.3rem;
                     font-family: 'Montserrat', sans-serif;
                 }
             }
+            .border-top {
+                content:"";
+                width:100%;
+                height: 2px;
+                left:0;
+                top:0;
+                background:linear-gradient(to right, red 30%, white 10%);
+            }    
             // .border-top {
             //     content:"";
             //     width:100%;
@@ -273,15 +285,15 @@ header {
             //         }
             //     }
             // }
-            .border-top {
-                content:"";
-                width: 100%;
-                height: 2px;
-                left:0;
-                top:0;
-                // background:linear-gradient(to right, red 30%, white 10%);
-                background: white;
-            }
+            // .border-top {
+            //     content:"";
+            //     width: 100%;
+            //     height: 2px;
+            //     left:0;
+            //     top:0;
+            //     // background:linear-gradient(to right, red 30%, white 10%);
+            //     background: white;
+            // }
             // .border-top {
             //     content:"";
             //     width: 10%;
@@ -435,8 +447,6 @@ main {
                 color: $whiteColor;
                 border-left: 1px solid $whiteColor;
                 padding: 58px 28px 58px 28px;
-                // width: 19.7%;
-                // width: 16vw;
                 max-width: 276px;
                 width: 100%;
                 .number {
@@ -498,6 +508,7 @@ main {
     section {
         .unique-design-block {
             position: relative;
+            margin-bottom: 50px;
             .content-wrapper {
                 display: block;
                 position: relative;
@@ -510,9 +521,8 @@ main {
                     margin-top: 15px;
                 }
                 img {
-                    // width: 100vw;
                     max-width: 25vw;
-                    // padding-top: 150px;
+                    height: auto;
                 }
             }
         }
@@ -716,7 +726,6 @@ main {
                 vertical-align: middle;
                 margin-right: 50px;
                 img {
-                    // width: 100px;
                     border: 3px solid $lightGreenColor;
                     padding: 30px;
                 }
@@ -1112,12 +1121,6 @@ main {
                         display: inline-block;
                         width: 50%;
                         margin-left: 20px; 
-                        h5 {
-
-                        }
-                        span {
-
-                        }
                         .rectangle-red {
                             margin-left: 0;
                             margin-top: 10px !important;
@@ -1144,7 +1147,6 @@ main {
     section {
         .latest-blog-block {
             text-align: center;
-            // font-size: 0;
             margin-top: 75px;
             margin-bottom: 75px;
             span {
@@ -1152,7 +1154,6 @@ main {
             }
             h1 {
                 margin-top: 15px;
-                // font-size: 2rem;
             }
             .images {
                 .image-wrapper {
@@ -1198,7 +1199,6 @@ main {
                         height: 230px;
                         max-width: 100%;
                         cursor: pointer;
-                        // vertical-align: top;
                         .date {
                             position: absolute; 
                             margin-left: -10px; 
@@ -1210,7 +1210,6 @@ main {
                     }
                     .context {
                         text-align: left;
-                        // width: 70%;
                     }
                 }
             }
@@ -1237,11 +1236,6 @@ main {
                     margin-top: $headerMargin;
                     margin-bottom: $headerMargin;
                 }
-                img {
-                    // width: 100vw;
-                    // max-width: 25vw;
-                    // padding-top: 150px;
-                }
             }
         }
         .map-block::before {
@@ -1249,7 +1243,6 @@ main {
             background-image: linear-gradient(90deg, rgba(255,255,255,0.8267682072829132) 100%, rgba(9,9,121,0.48783263305322133) 100%, rgba(0,212,255,1) 100%), url('../assets/unique-design-image/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg');
             background-size: 100% 100%;
             width: 100%;
-            // height: 90.2%;
             height: 250px;
             filter: grayscale(1);
             position: absolute;
@@ -1258,19 +1251,15 @@ main {
 }
 
 footer {
-    // font-size: 0;
     .mogo-footer {
-        // text-align: center;
         margin-top: 150px;
         font-size: 0;
         .left-content {
             display: inline-block;
             width: 30%;
-            // margin: 0 auto !important;
             max-width: 100%;
             vertical-align: top;
             font-size: 1rem;
-            // text-align: left;
             h2 {
                 font-size: xx-large;
                 margin-bottom: 30px
@@ -1286,7 +1275,6 @@ footer {
                 input {
                     display: inline-block;
                     height: 39px;
-                    // max-width: 290px;
                     width: 56%;
                     border: 1px solid $greyColor;
                 }
@@ -1316,9 +1304,6 @@ footer {
                 margin-bottom: 40px;
             }
             .blog {
-                img {
-                    // margin-right: 5px;
-                }
                 .text {
                     display: inline-block; 
                     vertical-align: top; 
@@ -1708,6 +1693,16 @@ footer {
     }
 }
 
+@media only screen and (max-width: 708px) {
+    .header-bottom-content {
+        section {
+            p {
+                width: 30% !important;
+            }
+        }    
+    }
+}
+
 @media only screen and (max-width: 697px) {
     section {
         .carousele-block-2 {
@@ -1835,6 +1830,13 @@ footer {
 }
 
 @media only screen and (max-width: 598px) {
+    .header-bottom-content {
+        section {
+            span, p {
+                font-size: 3vw !important;
+            }
+        }    
+    }
     footer {
         .mogo-footer {
             .center-content {
@@ -1849,6 +1851,11 @@ footer {
 }
 
 @media only screen and (max-width: 370px) {
+    .header-bottom-content {
+        section {
+            width: 23% !important;
+        }    
+    }
     footer {
         .mogo-footer {
             .left-content {
